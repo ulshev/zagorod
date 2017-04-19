@@ -4,53 +4,18 @@ $(document).ready(function() {
 	(function($){
 		$(window).on("load",function(){
 		    $("#main_menu a,a[rel='m_PageScroll2id']").mPageScroll2id({
-						highlightSelector:"#main_menu a"
-					});
+			highlightSelector:"#main_menu a"
+		    });
 		    $("a[rel='m_PageScroll2id']").mPageScroll2id({scrollSpeed: 900});
 		});
 	})(jQuery);
 	
 	
-	$('.karusel_advantages').slick({
-		dots: false,
-		infinite: true,
-		speed: 300,
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		arrows: true,
-		responsive: [
-		  {
-		    breakpoint: 1750,
-		    settings: {
-		      slidesToShow: 4,
-		    }
-		  },
-		  {
-		    breakpoint: 1400,
-		    settings: {
-		      slidesToShow: 3,
-		    }
-		  },
-		  {
-		    breakpoint: 1000,
-		    settings: {
-		      slidesToShow: 2,
-		    }
-		  },
-		  {
-		    breakpoint: 600,
-		    settings: {
-		      slidesToShow: 1,
-		    }
-		  }
-		]
-	});
-	
 	$('.sertificates_slider').slick({
 		dots: false,
 		arrows: true,
 		infinite: true,
-		speed: 300,
+		speed: 1000,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [
@@ -92,8 +57,6 @@ $(document).ready(function() {
 		arrows: true,
 		infinite: true,
 		speed: 1500,
-		//autoplay: true,
-		//autoplaySpeed: 2000,
 		slidesToShow: 2,
 		slidesToScroll: 2,
 		//fade: true,
@@ -121,8 +84,6 @@ $(document).ready(function() {
 		arrows: true,
 		infinite: true,
 		speed: 1500,
-		//autoplay: true,
-		//autoplaySpeed: 1500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		//fade: true,
@@ -136,8 +97,8 @@ $(document).ready(function() {
 		prevArrow: '<span class="slick-prev"></span>',
 		nextArrow: '<span class="slick-next"></span>',
 		speed: 1500,
-		//autoplay: true,
-		//autoplaySpeed: 2500,
+		autoplay: true,
+		autoplaySpeed: 2500,
 		dots: true,
 	});
 	
@@ -245,8 +206,173 @@ $(document).ready(function() {
 	});
 	
 	
+	var mainBodyScroll = function(event){
+		
+		var windowHeight = $(window).height();
+		var loadingElements = {
+			"#advantages": {
+				position: 0,
+				loaded: false,
+				interval: 300,
+			},
+			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(1)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(2)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(3)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(4)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(5)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(1)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(2)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(3)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(4)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(5)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			
+			"#equipment .h1": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#equipment .text": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#equipment .equ_main_block": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#equipment #qualities": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#catalog": {
+				position: 0,
+				loaded: false,
+				interval: 300,
+			},
+			"#action": {
+				position: 0,
+				loaded: false,
+				interval: 300,
+			},
+			"#working": {
+				position: 0,
+				loaded: false,
+				interval: 300,
+			},
+			"#turnkey_work": {
+				position: 0,
+				loaded: false,
+				interval: 400,
+			},
+			"#standards": {
+				position: 0,
+				loaded: false,
+				interval: 400,
+			},
+			"#sertificates": {
+				position: 0,
+				loaded: false,
+				interval: 200,
+			},
+			"#about .h1": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#about .about_item:nth-child(1)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#about .about_item:nth-child(2)": {
+				position: 0,
+				loaded: false,
+				interval: 200,
+			},
+			"#about .about_item:nth-child(3)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#about .about_item:nth-child(4)": {
+				position: 0,
+				loaded: false,
+				interval: 100,
+			},
+			"#other_jobs": {
+				position: 0,
+				loaded: false,
+				interval: 300,
+			},
+			"#reviews": {
+				position: 0,
+				loaded: false,
+				interval: 400,
+			},
+			"#contacts": {
+				position: 0,
+				loaded: false,
+				interval: 300,
+			},
+		};
+		
+		$.each(loadingElements, function(id, nextElement){
+			var $nextElement = $(id);
+			loadingElements[id].position = $nextElement.offset().top - windowHeight;
+		});
+
+		if(event.currentTarget.scrollY > 0){
+			$.each(loadingElements, function(id, nextElement){
+				if(event.currentTarget.scrollY > loadingElements[id].position + loadingElements[id].interval){
+					$(id).addClass("animated");
+				}
+			});
+		}
+
+	};
 	
-	
-	
+	$(window).on("load scroll", mainBodyScroll);
 
 });

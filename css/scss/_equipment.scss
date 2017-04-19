@@ -16,7 +16,7 @@
     .equ_main_block {
 	position: relative;
 	max-width: $max-width;
-	padding: 0 20px 80px;
+	padding: 0 20px 60px;
 	margin: 0 auto;
 	
 	.h4 {
@@ -87,11 +87,11 @@
 		max-width: 100%;
 		position: absolute;
 		top: 50%;
-		-webkit-transform: translate(0, -45%) scale(1);
-		-moz-transform: translate(0,-45%) scale(1);
-		-ms-transform: translate(0, -45%) scale(1);
-		-o-transform: translate(0, -45%) scale(1);
-		transform: translate(0, -45%) scale(1);
+		-webkit-transform: translate(0, -40%) scale(1);
+		-moz-transform: translate(0,-40%) scale(1);
+		-ms-transform: translate(0, -40%) scale(1);
+		-o-transform: translate(0, -40%) scale(1);
+		transform: translate(0, -40%) scale(1);
 	    }
 	}
     }
