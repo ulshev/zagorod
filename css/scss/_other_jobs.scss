@@ -101,7 +101,7 @@
             border: 5px solid rgba(237, 110, 46, 0.6);
             position: relative;
             z-index: 2;
-            border-radius: 35px;
+            border-radius: 40px;
             overflow: hidden;
             margin-bottom: 20px;
             transform: scale(1);
@@ -124,6 +124,14 @@
                 background-size: 15px;
                 padding-top: 0;
                 margin-bottom: 10px;
+            }
+        }
+        
+        .button {
+            background-color: $color_a;
+            
+            &:hover {
+                background-color: #a0bf37;
             }
         }
     }

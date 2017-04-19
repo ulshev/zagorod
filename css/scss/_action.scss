@@ -61,6 +61,10 @@
 		font-weight: 700;
 		font-size: 72px;
 		line-height: 120px;
+		
+		&:hover {
+		    background-color: #a0bf37;
+		}
 	    }
 	    .discount {
 		width: 120px;
@@ -124,6 +128,11 @@
 	    
 	    .button {
 		background-color: $color_a;
+		@include transition(background-color);
+	
+		&:hover {
+		    background-color: #a0bf37;
+		}
 	    }
 	}
     }
@@ -385,7 +394,9 @@
 		}
 	    }
 	}
-	
+	.slick-slider .slick-arrow {
+	    display: none !important;
+	}
 	.slick-slider .slick-dots {
 	    bottom: 10px;
 	}

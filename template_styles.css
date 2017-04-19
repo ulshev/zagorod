@@ -141,11 +141,15 @@ a.button {
   color: #fff;
   background-color: #ed6e2e;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-out 0s;
+  -moz-transition: background-color 0.2s ease-out 0s;
+  -o-transition: background-color 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
 }
 
 a.button:hover {
-  box-shadow: inset 0 0 3px RGBA(0, 0, 0, 0.4);
+  background-color: #d1632b;
 }
 
 a.button:active {
@@ -296,16 +300,23 @@ a.button:active {
   .tab_buttons span {
     padding: 15px 30px 15px;
   }
+
+  h1, .h1 {
+    font-size: 29px;
+  }
 }
 @media screen and (max-width: 999px) {
   .tab_buttons span {
     padding: 15px 20px;
     font-size: 15px;
   }
+
+  h1, .h1 {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 800px) {
   .tab_buttons {
-    max-width: 600px;
     margin: 0 auto;
   }
   .tab_buttons span {
@@ -314,6 +325,10 @@ a.button:active {
   }
 }
 @media screen and (max-width: 590px) {
+  h1, .h1 {
+    font-size: 23px;
+  }
+
   .slick-slider .slick-arrow {
     margin-top: -18px;
     width: 35px;
@@ -368,6 +383,10 @@ a.button:active {
     padding: 10px 15px;
     font-size: 13px;
   }
+
+  h1, .h1 {
+    font-size: 20px;
+  }
 }
 .in {
   padding: 10px 20px;
@@ -411,7 +430,7 @@ a.button:active {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   z-index: 30;
 }
@@ -440,6 +459,13 @@ a.button:active {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 300;
+  -webkit-transition: background-color 0.2s ease-out 0s;
+  -moz-transition: background-color 0.2s ease-out 0s;
+  -o-transition: background-color 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
+}
+#header a.button:hover {
+  background-color: #a0bf37;
 }
 #header a.button:active {
   margin-top: 19px;
@@ -1673,6 +1699,11 @@ footer #copy {
   box-sizing: border-box;
   margin: 0 0 0 -1px;
   padding-bottom: 1px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease-out 0s;
+  -moz-transition: background-color 0.2s ease-out 0s;
+  -o-transition: background-color 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
 }
 #catalog .product_item:hover {
   background-color: #f4f4f4;
@@ -1846,6 +1877,7 @@ footer #copy {
     border-right: 0;
     margin: 0;
     padding: 0 70px;
+    min-height: 390px;
   }
   #catalog .product_item .product_info .h4 {
     margin-bottom: 10px;
@@ -2017,9 +2049,14 @@ footer #copy {
   background-color: #ed6e2e;
   cursor: pointer;
   margin-bottom: 0;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-out 0s;
+  -moz-transition: background-color 0.2s ease-out 0s;
+  -o-transition: background-color 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
 }
 .form input[type="submit"]:hover {
-  box-shadow: inset 0 0 2px RGBA(0, 0, 0, 0.5);
+  background-color: #d1632b;
 }
 .form input[type="submit"]:active, .form input[type="reset"]:active {
   height: 56px;
@@ -2241,6 +2278,9 @@ footer #copy {
   font-size: 72px;
   line-height: 120px;
 }
+#action .action_item .img .bonus:hover {
+  background-color: #a0bf37;
+}
 #action .action_item .img .discount {
   width: 120px;
   height: 120px;
@@ -2294,6 +2334,13 @@ footer #copy {
 }
 #action .action_item .action_info .button {
   background-color: #8fab32;
+  -webkit-transition: background-color 0.2s ease-out 0s;
+  -moz-transition: background-color 0.2s ease-out 0s;
+  -o-transition: background-color 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
+}
+#action .action_item .action_info .button:hover {
+  background-color: #a0bf37;
 }
 
 @media screen and (max-width: 1600px) {
@@ -2499,6 +2546,9 @@ footer #copy {
   #action .action_item .action_info strong.green {
     font-size: 20px;
   }
+  #action .slick-slider .slick-arrow {
+    display: none !important;
+  }
   #action .slick-slider .slick-dots {
     bottom: 10px;
   }
@@ -2672,7 +2722,7 @@ footer #copy {
     padding: 30px 0px 40px;
   }
   #turnkey_work .turnkey_work_stages .slick-list {
-    margin: 0 50px;
+    margin: 0 65px;
   }
   #turnkey_work .turnkey_work_stages li {
     width: 100%;
@@ -2968,6 +3018,9 @@ footer #copy {
   font-size: 18px;
   font-weight: 300;
 }
+#sertificates .text .button:hover {
+  background-color: #a0bf37;
+}
 #sertificates .sertificates_slider {
   margin-left: 45%;
   text-align: center;
@@ -3205,10 +3258,16 @@ footer #copy {
   #about .slick-list {
     margin: 0 55px;
   }
+  #about .slick-slider .slick-arrow {
+    top: 200px;
+  }
 }
 @media screen and (max-width: 450px) {
   #about .slick-list {
     margin: 0 20px;
+  }
+  #about .slick-slider .slick-arrow {
+    top: 200px;
   }
 }
 /* end about styles */
@@ -3452,7 +3511,7 @@ footer #copy {
 }
 @media screen and (max-width: 610px) {
   #reviews .slick-list {
-    margin: 0 40px;
+    margin: 0 50px;
   }
   #reviews .review_item .video {
     float: none;
@@ -3620,7 +3679,7 @@ footer #copy {
   border: 5px solid rgba(237, 110, 46, 0.6);
   position: relative;
   z-index: 2;
-  border-radius: 35px;
+  border-radius: 40px;
   overflow: hidden;
   margin-bottom: 20px;
   transform: scale(1);
@@ -3644,6 +3703,12 @@ footer #copy {
   background-size: 15px;
   padding-top: 0;
   margin-bottom: 10px;
+}
+#other_jobs .o_job_item .button {
+  background-color: #8fab32;
+}
+#other_jobs .o_job_item .button:hover {
+  background-color: #a0bf37;
 }
 #other_jobs .o_job_item:hover .icon {
   transform: scale(1.3);

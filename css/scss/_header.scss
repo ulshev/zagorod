@@ -5,7 +5,7 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     z-index: 30;
     
@@ -38,6 +38,11 @@
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 300;
+	@include transition(background-color);
+	
+	&:hover {
+            background-color: #a0bf37;
+        }
 	
 	&:active {
 	    margin-top: 19px;

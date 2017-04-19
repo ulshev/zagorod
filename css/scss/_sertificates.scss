@@ -31,6 +31,10 @@
             background-color: $color_a;
             font-size: 18px;
             font-weight: 300;
+            
+            &:hover {
+                background-color: #a0bf37;
+            }
         }
     }
     
