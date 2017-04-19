@@ -1,0 +1,162 @@
+/* start sertificates styles */
+
+#sertificates {
+    background-color: #eeeeee;
+    z-index: 6;
+    overflow: hidden;
+    
+    .text {
+        float: left;
+        width: 40%;
+        line-height: 145%;
+        text-align: center;
+        padding-top: 40px;
+        
+        .h2 {
+            font-size: 25px;
+            line-height: 145%;
+            margin-bottom: 20px;
+        }
+        
+        .green {
+            color: $color_a;
+        }
+        p {
+            padding: 0 60px;
+        }
+        .button {
+            height: auto;
+            padding: 15px 25px;
+            line-height: 130%;
+            background-color: $color_a;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    
+    .sertificates_slider {
+        margin-left: 45%;
+        text-align: center;
+        
+        .slick-list {
+            margin: 0 40px;
+        }
+        
+        img {
+            display: inline;
+            max-width: 80%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+    #sertificates {
+        .text {
+            width: 43%;
+            line-height: 145%;
+            padding-top: 10px;
+            
+            .h2 {
+                font-size: 22px;
+                line-height: 145%;
+                margin-bottom: 20px;
+            }
+            p {
+                padding: 0 30px;
+            }
+            .button {
+                line-height: 130%;
+                font-size: 17px;
+            }
+        } 
+        
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #sertificates {
+        .text {
+            width: 43%;
+            line-height: 145%;
+            padding-top: 10px;
+            font-size: 15px;
+            
+            .h2 {
+                font-size: 20px;
+                line-height: 145%;
+                margin-bottom: 20px;
+            }
+            p {
+                padding: 0 30px;
+            }
+            .button {
+                line-height: 130%;
+                font-size: 15px;
+            }
+        } 
+        
+    }
+    
+}
+@media screen and (max-width: 999px) {
+    #sertificates {
+        .text {
+            width: auto;
+            line-height: 145%;
+            padding-top: 0px;
+            font-size: 15px;
+            float: none;
+            margin-bottom: 30px;
+            
+            .h2 {
+                font-size: 20px;
+                line-height: 145%;
+                margin-bottom: 20px;
+            }
+            p {
+                padding: 0 30px;
+            }
+            .button {
+                line-height: 130%;
+                font-size: 15px;
+            }
+        } 
+        .sertificates_slider {
+            margin-left: 0;
+        }
+    }
+    
+}
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 590px) {
+    #sertificates {
+        .text {
+            
+            .h2 {
+                font-size: 18px;
+                line-height: 145%;
+                margin-bottom: 10px;
+            }
+            p {
+                padding: 0px;
+            }
+            .button {
+                line-height: 130%;
+                font-size: 13px;
+            }
+        }
+        .sertificates_slider {
+            margin: 0 -20px;
+            padding: 0 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+   
+}
+
+/* end sertificates styles */

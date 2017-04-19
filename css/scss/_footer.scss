@@ -1,0 +1,70 @@
+/* start footer styles */
+
+#pre_foo {
+    clear: both;
+    display: table-row;
+    height: 100%;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 2;
+    display: table-row;
+    position: relative;
+    
+    .in { 
+        max-width: $max-width;
+        color: #fff;
+        padding: 5px 20px;
+        font-size: 14px;
+        line-height: 145%;
+        
+        &:after { 
+            @include clear();
+        }
+    }
+        
+    #foo_logo {
+        width: 102px;
+        float: left;
+        margin-right: 55px;
+        img {
+            width: 100%;
+        }
+    }
+    #copy {
+        padding-top: 13px;
+    }
+    
+}
+
+#index footer {
+    display: block;
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        .in { 
+            font-size: 12px;
+            line-height: 145%;
+        }
+            
+        #foo_logo {
+            width: 80px;
+            float: left;
+            margin-right: 45px;
+            img {
+                width: 100%;
+            }
+        }
+        #copy {
+            padding-top: 9px;
+            text-align: right;
+        }
+        
+    }
+}
+
+/* end footer styles */

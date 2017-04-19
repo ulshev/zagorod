@@ -1,0 +1,155 @@
+/* start turnkey_work styles */
+
+#turnkey_work {
+    background: #2b2202 center no-repeat;
+    background-size: cover;
+    z-index: 9;
+    overflow: hidden;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: url(images/bg_grid.png);
+    }
+    
+    .in {
+	padding: 50px 20px 60px;
+	color: #fff;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+    }
+    
+    .turnkey_work_stages {
+	li {
+	    text-align: left;
+	    width: 320/1560*100%;
+	    margin-right: 50/1560*100%;
+	    padding: 20px 20px 10px 20px;
+	    box-sizing: border-box;
+	    display: inline-block;
+	    vertical-align: top;
+	    background: none;
+	    position: relative;
+	    line-height: 145%;
+	    margin-bottom: 40px;
+	    
+	    .num {
+		opacity: 0.3;
+		color: $color_a;
+		font-weight: 900;
+		font-size: 92px;
+		line-height: 100%;
+		position: absolute;
+		left: 0;
+		top: -10px;
+	    }
+	    
+	    h4 {
+		font-size: 17px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	    }
+	}
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+    #turnkey_work {
+	.turnkey_work_stages {
+	    padding-bottom: 20px;
+	    li {
+		padding: 20px 0px 10px 20px;
+		margin-bottom: 20px;
+	    }
+	}
+	
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #turnkey_work {
+	.turnkey_work_stages {
+	    li {
+		line-height: 145%;
+		font-size: 15px;
+		margin-bottom: 0px;
+		
+		&:before {
+		    font-size: 82px;
+		    line-height: 100%;
+		    top: 0;
+		}
+		h4 {
+		    font-size: 15px;
+		}
+	    }
+	}
+    }
+}
+@media screen and (max-width: 999px) {
+    #turnkey_work {
+	.turnkey_work_stages {
+	    li {
+		width: 690/1560*100%;
+		
+		&:before {
+		    font-size: 82px;
+		    line-height: 100%;
+		    top: 0;
+		}
+	    }
+	}
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #turnkey_work {
+	.in {
+	    padding: 30px 0px 40px;
+	}
+	.turnkey_work_stages {
+	    .slick-list {
+		margin: 0 50px;
+	    }
+	    li {
+		width: 100%;
+		margin-right: 0;
+		padding: 20px 20px 10px;
+		height: 190px;
+	    }
+	}
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #turnkey_work {
+	.turnkey_work_stages {
+	    li {
+		width: 100%;
+		margin-right: 0;
+		
+	    }
+	}
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #turnkey_work {
+	.turnkey_work_stages {
+	    li {
+		padding: 20px 10px 10px;
+		
+	    }
+	}
+    }
+}
+
+/* end turnkey_work styles */

@@ -1,0 +1,243 @@
+
+/* start header styles */
+#header {
+    //min-height: 95px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    z-index: 30;
+    
+    .in {
+        z-index: 2;
+    }
+    
+    #logo {
+	margin-right: 33px;
+	width: 178px;
+	float: left;
+	font-size: 35px;
+	color: $color_a;
+        
+        img {
+            width: 100%;
+        }
+        
+        a:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    a.button {
+	float: right;
+	margin-left: 45px;
+	background-color: $color_a;
+	padding: 10px 19px 4px;
+	margin-top: 18px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 300;
+	
+	&:active {
+	    margin-top: 19px;
+	    margin-bottom: 1px;
+	}
+    }
+    
+    #headr_cont  {
+	float: right;
+	font-size: 19px;
+	line-height: 145%;
+        font-weight: 300;
+	background: url(images/icon_header_tel.png) left center no-repeat;
+	padding-left: 32px;
+	margin-top: 26px;
+        
+        a.tel {
+            color: #fff;
+            text-decoration: none;
+	    @include transition(color);
+	    
+            &:hover {
+                color: $color_a;
+            }
+        }
+    }
+    
+    nav {
+	margin: 15px 30px 10px;
+	padding: 0;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 300;
+	
+        ul.main_menu {
+            li {
+                margin-right: 37/1634*100%;
+                text-transform: uppercase;
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                border-bottom: 1px solid transparent;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+		display: block;
+                height: 15px;
+                padding: 15px 10px 15px;
+		
+		&:hover {
+		    color: $color_a;
+		}                    
+		&.mPS2id-highlight /*&.active*/  {
+		    @include h_decor();
+		}
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+    #header {
+	#logo {
+	    margin-right: 25px;
+	    width: 160px;
+	}
+	
+	a.button {
+	    margin-left: 35px;
+	    padding: 10px 19px 4px;
+	    margin-top: 16px;
+	    
+	    &:active {
+		margin-top: 17px;
+	    }
+	}
+	
+	#headr_cont  {
+	    font-size: 17px;
+	    line-height: 145%;
+	    margin-top: 24px;
+	    background-size: 21px auto;
+	}
+	
+	nav {
+	    margin: 13px 30px 10px;
+	    font-size: 12px;
+	    font-weight: 300;
+	    text-align: center;
+	    
+	    ul.main_menu {
+		li {
+		    margin-right: 30/1634*100%;
+		}
+		a {
+		    padding: 15px 10px 15px;
+		} 
+	    }
+	}
+    }
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    #header {
+	#logo {
+	    margin-right: 25px;
+	    width: 144px;
+	}
+	
+	a.button {
+	    margin-left: 25px;
+	    padding: 10px 14px 4px;
+	    margin-top: 0px;
+	    
+	    &:active {
+		margin-top: 1px;
+	    }
+	}
+	
+	#headr_cont  {
+	    font-size: 15px;
+	    line-height: 145%;
+	    margin-top: 10px;
+	    clear: right;
+	    width: 120px;
+	}
+	
+	nav {
+	    margin: 11px 30px 10px;
+	    font-size: 12px;
+	    font-weight: 300;
+	    
+	    ul.main_menu {
+		li {
+		    margin-right: 0;
+		}
+		a {
+		    padding: 15px 10px 15px;
+		} 
+	    }
+	}
+    }
+
+}
+@media screen and (max-width: 999px) {
+    #header {
+	#logo {
+	    margin-right: 25px;
+	    width: 144px;
+	}
+	
+	a.button {
+	    margin-left: 25px;
+	    padding: 10px 14px 4px;
+	    margin-top: 10px;
+	    
+	    &:active {
+		margin-top: 11px;
+	    }
+	}
+	
+	#headr_cont  {
+	    font-size: 17px;
+	    line-height: 145%;
+	    padding-left: 30px;
+	    margin-top: 19px;
+	}
+	
+	nav {
+	    display: none;
+	}
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #header {
+	a.button {
+	    display: none;
+	}
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #header {
+	#logo {
+	    margin-right: 13px;
+	    width: 120px;
+	}
+	
+	#headr_cont  {
+	    font-size: 15px;
+	    line-height: 145%;
+	    margin-top: 16px;
+	    background-size: auto 100%;
+	}
+    }
+}
+
+/* end header styles */
