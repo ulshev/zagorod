@@ -358,7 +358,7 @@ $(document).ready(function() {
 			},
 		};
 		
-		$.each(loadingElements, function(id, nextElement){
+		$.each(loadingElements, function(id){
 			var $nextElement = $(id);
 			loadingElements[id].position = $nextElement.offset().top - windowHeight;
 		});
@@ -374,5 +374,7 @@ $(document).ready(function() {
 	};
 	
 	$(window).on("load scroll", mainBodyScroll);
+	
+	
 
 });
