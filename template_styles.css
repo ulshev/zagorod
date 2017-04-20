@@ -425,6 +425,10 @@ a.button:active {
   margin-bottom: 20px;
 }
 
+.fancybox-enabled {
+  box-sizing: border-box;
+}
+
 /* start header styles */
 #header {
   width: 100%;
@@ -1992,6 +1996,7 @@ footer #copy {
 .form .green {
   color: #8fab32;
   margin-bottom: 5px;
+  font-weight: 200;
 }
 .form .button_block {
   padding-top: 10px;
@@ -2038,7 +2043,7 @@ footer #copy {
 .form input {
   text-align: center;
 }
-.form textarea {
+.form textarea, .form input.textarea {
   min-width: 710px;
   max-width: 710px;
   min-height: 45px;
@@ -2059,6 +2064,7 @@ footer #copy {
   -moz-transition: background-color 0.2s ease-out 0s;
   -o-transition: background-color 0.2s ease-out 0s;
   transition: background-color 0.2s ease-out 0s;
+  border-bottom-color: transparent;
 }
 .form input[type="submit"]:hover {
   background-color: #d1632b;
@@ -2107,7 +2113,7 @@ footer #copy {
     height: 42px;
     font-size: 16px;
   }
-  .form textarea {
+  .form textarea, .form input.textarea {
     min-width: 660px;
     max-width: 660px;
     min-height: 42px;
@@ -2137,7 +2143,7 @@ footer #copy {
     height: 40px;
     font-size: 16px;
   }
-  .form textarea {
+  .form textarea, .form input.textarea {
     min-width: 580px;
     max-width: 580px;
     min-height: 40px;
@@ -2176,7 +2182,7 @@ footer #copy {
     width: 220px;
     font-size: 16px;
   }
-  .form textarea {
+  .form textarea, .form input.textarea {
     min-width: 450px;
     max-width: 450px;
   }
@@ -2201,7 +2207,7 @@ footer #copy {
     width: 220px;
     font-size: 15px;
   }
-  .form textarea {
+  .form textarea, .form input.textarea {
     min-width: 350px;
     max-width: 350px;
   }
@@ -2215,7 +2221,7 @@ footer #copy {
     font-size: 16px;
     line-height: 145%;
   }
-  .form textarea {
+  .form textarea, .form input.textarea {
     min-width: 280px;
     max-width: 280px;
   }
@@ -3269,7 +3275,7 @@ footer #copy {
 }
 @media screen and (max-width: 450px) {
   #about .slick-list {
-    margin: 0 20px;
+    margin: 0 50px;
   }
   #about .slick-slider .slick-arrow {
     top: 200px;
@@ -3516,7 +3522,7 @@ footer #copy {
 }
 @media screen and (max-width: 610px) {
   #reviews .slick-list {
-    margin: 0 50px;
+    margin: 0 60px;
   }
   #reviews .review_item .video {
     float: none;

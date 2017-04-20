@@ -358,7 +358,7 @@ $(document).ready(function() {
 			},
 		};
 		
-		$.each(loadingElements, function(id){
+		$.each(loadingElements, function(id, nextElement){
 			var $nextElement = $(id);
 			loadingElements[id].position = $nextElement.offset().top - windowHeight;
 		});
@@ -375,6 +375,13 @@ $(document).ready(function() {
 	
 	$(window).on("load scroll", mainBodyScroll);
 	
-	
+	/*$(window).on('load scroll', function(e) {
+		console.log($(window).scrollTop());
+		console.log($('.main_section').offset().top - 500);
+		console.log('***********************************************');
+		if($('.main_section').length && $(window).scrollTop() >= $('.main_section').offset().top - 500){
+		  $('.main_section').addClass('animated');
+		}
+	});*/
 
 });
