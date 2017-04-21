@@ -2943,9 +2943,9 @@ footer #copy {
   #standards .video {
     width: auto;
     max-width: 70%;
-    display: inline-block;
+    zdisplay: inline-block;
     float: none;
-    margin-bottom: 20px;
+    margin: 25px auto 20px;
   }
   #standards .video .play {
     background-size: 18%;
@@ -3725,6 +3725,37 @@ footer #copy {
   transform: scale(1.3);
 }
 
+@media screen and (max-width: 999px) {
+  #other_jobs .h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 145%;
+  }
+}
+@media screen and (max-width: 590px) {
+  #other_jobs .h2 {
+    font-size: 19px;
+    line-height: 145%;
+  }
+  #other_jobs .slick-list {
+    margin: 0 45px;
+  }
+  #other_jobs .o_job_item {
+    font-size: 15px;
+  }
+  #other_jobs .o_job_item .bg_img {
+    height: 135px;
+  }
+  #other_jobs .o_job_item .h3 {
+    font-size: 19px;
+    line-height: 125%;
+    padding-top: 20px;
+    height: 55px;
+  }
+  #other_jobs .o_job_item ul li {
+    margin-bottom: 5px;
+  }
+}
 /* end other jobs styles */
 /* start contacts styles */
 #contacts {

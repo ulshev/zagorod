@@ -145,18 +145,57 @@
 }
 
 @media screen and (max-width: 1600px) {
+    
 }
 
 @media screen and (max-width: 1300px){
     
 }
 @media screen and (max-width: 999px) {
+    #other_jobs {
+        .h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            line-height: 145%;
+        }
+    }
     
 }
 @media screen and (max-width: 800px) {
 }
 
 @media screen and (max-width: 590px) {
+    #other_jobs {
+        .h2 {
+            font-size: 19px;
+            line-height: 145%;
+        }
+        
+        .slick-list {
+            margin: 0 45px;
+        }
+        
+        .o_job_item {
+            font-size: 15px;
+            
+            .bg_img {
+                height: 135px;
+            }
+            
+            .h3 {
+                font-size: 19px;
+                line-height: 125%;
+                padding-top: 20px;
+                height: 55px;
+            }
+            
+            ul {
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {

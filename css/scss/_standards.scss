@@ -234,9 +234,9 @@
 	.video {
 	    width: auto;
 	    max-width: 70%;
-	    display: inline-block;
+	    zdisplay: inline-block;
 	    float: none;
-	    margin-bottom: 20px;
+	    margin: 25px auto 20px;
 	    
 	    .play {
 		background-size: 18%;
