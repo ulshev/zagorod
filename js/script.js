@@ -195,6 +195,179 @@ $(document).ready(function() {
 		    ]
 		  });
 		}
+
+	    if ( window.innerWidth>799 ) {
+		var mainBodyScroll = function(event){
+			
+			var windowHeight = $(window).height();
+			var loadingElements = {
+				"#advantages": {
+					position: 0,
+					loaded: false,
+					interval: 300,
+				},
+				"#advantages .adv_tree_left_items .adv_tree_item:nth-child(1)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_left_items .adv_tree_item:nth-child(2)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_left_items .adv_tree_item:nth-child(3)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_left_items .adv_tree_item:nth-child(4)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_left_items .adv_tree_item:nth-child(5)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_right_items .adv_tree_item:nth-child(1)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_right_items .adv_tree_item:nth-child(2)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_right_items .adv_tree_item:nth-child(3)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_right_items .adv_tree_item:nth-child(4)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#advantages .adv_tree_right_items .adv_tree_item:nth-child(5)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				
+				"#equipment .h1": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#equipment .text": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#equipment .equ_main_block": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#equipment #qualities": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#catalog": {
+					position: 0,
+					loaded: false,
+					interval: 300,
+				},
+				"#action": {
+					position: 0,
+					loaded: false,
+					interval: 300,
+				},
+				"#working": {
+					position: 0,
+					loaded: false,
+					interval: 300,
+				},
+				"#turnkey_work": {
+					position: 0,
+					loaded: false,
+					interval: 400,
+				},
+				"#standards": {
+					position: 0,
+					loaded: false,
+					interval: 400,
+				},
+				"#sertificates": {
+					position: 0,
+					loaded: false,
+					interval: 200,
+				},
+				"#about .h1": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#about .about_item:nth-child(1)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#about .about_item:nth-child(2)": {
+					position: 0,
+					loaded: false,
+					interval: 200,
+				},
+				"#about .about_item:nth-child(3)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#about .about_item:nth-child(4)": {
+					position: 0,
+					loaded: false,
+					interval: 100,
+				},
+				"#other_jobs": {
+					position: 0,
+					loaded: false,
+					interval: 300,
+				},
+				"#reviews": {
+					position: 0,
+					loaded: false,
+					interval: 400,
+				},
+				"#contacts": {
+					position: 0,
+					loaded: false,
+					interval: 300,
+				},
+			};
+			
+			$.each(loadingElements, function(id, nextElement){
+				var $nextElement = $(id);
+				loadingElements[id].position = $nextElement.offset().top - windowHeight;
+			});
+	
+			if($(window).scrollTop() > 0){
+				$.each(loadingElements, function(id, nextElement){
+				  $(id).addClass("hidden");
+				  if($(window).scrollTop() > loadingElements[id].position + loadingElements[id].interval){
+				    $(id).addClass("animated");
+				  }
+				});
+			}
+	
+		};
+		
+		$(window).on("load scroll", mainBodyScroll);
+	    }
+	
 	});
 
 	$('input,textarea').focus(function(){
@@ -204,183 +377,6 @@ $(document).ready(function() {
 	$('input,textarea').blur(function(){
 	    $(this).attr('placeholder',$(this).data('placeholder'));
 	});
-	
-	
-	/*jQuery(document).ready(function() {
-		jQuery('.post').addClass("hidden").viewportChecker({
-		classToAdd: 'visible animated fadeIn',
-		offset: 100
-		});
-	});*/
-	
-	var mainBodyScroll = function(event){
-		
-		var windowHeight = $(window).height();
-		var loadingElements = {
-			"#advantages": {
-				position: 0,
-				loaded: false,
-				interval: 300,
-			},
-			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(1)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(2)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(3)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(4)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_left_items .adv_tree_item:nth-child(5)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(1)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(2)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(3)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(4)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#advantages .adv_tree_right_items .adv_tree_item:nth-child(5)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			
-			"#equipment .h1": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#equipment .text": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#equipment .equ_main_block": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#equipment #qualities": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#catalog": {
-				position: 0,
-				loaded: false,
-				interval: 300,
-			},
-			"#action": {
-				position: 0,
-				loaded: false,
-				interval: 300,
-			},
-			"#working": {
-				position: 0,
-				loaded: false,
-				interval: 300,
-			},
-			"#turnkey_work": {
-				position: 0,
-				loaded: false,
-				interval: 400,
-			},
-			"#standards": {
-				position: 0,
-				loaded: false,
-				interval: 400,
-			},
-			"#sertificates": {
-				position: 0,
-				loaded: false,
-				interval: 200,
-			},
-			"#about .h1": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#about .about_item:nth-child(1)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#about .about_item:nth-child(2)": {
-				position: 0,
-				loaded: false,
-				interval: 200,
-			},
-			"#about .about_item:nth-child(3)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#about .about_item:nth-child(4)": {
-				position: 0,
-				loaded: false,
-				interval: 100,
-			},
-			"#other_jobs": {
-				position: 0,
-				loaded: false,
-				interval: 300,
-			},
-			"#reviews": {
-				position: 0,
-				loaded: false,
-				interval: 400,
-			},
-			"#contacts": {
-				position: 0,
-				loaded: false,
-				interval: 300,
-			},
-		};
-		
-		$.each(loadingElements, function(id, nextElement){
-			var $nextElement = $(id);
-			loadingElements[id].position = $nextElement.offset().top - windowHeight;
-		});
-
-		if($(window).scrollTop() > 0){
-			$.each(loadingElements, function(id, nextElement){
-			  if($(window).scrollTop() > loadingElements[id].position + loadingElements[id].interval){
-			    $(id).addClass("animated");
-			  }
-			});
-		}
-
-	};
-	
-	$(window).on("load scroll", mainBodyScroll);
 	
 	/*$(window).on('load scroll', function(e) {
 		console.log($(window).scrollTop());

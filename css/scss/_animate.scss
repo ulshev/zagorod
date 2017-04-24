@@ -198,7 +198,7 @@
 
 @media screen and (min-width: 800px){
   
-  #advantages .h1 { opacity: 0; }
+  #advantages.hidden .h1 { opacity: 0; }
   #advantages.animated .h1 {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -208,7 +208,7 @@
     animation-name: zoomIn;
   }
 
-  #advantages .adv_tree_left_items .adv_tree_item, #advantages .adv_tree_right_items .adv_tree_item {
+  #advantages .adv_tree_left_items .adv_tree_item.hidden, #advantages .adv_tree_right_items .adv_tree_item.hidden {
     opacity: 0;
   }
   #advantages .adv_tree_left_items .adv_tree_item.animated {
@@ -233,7 +233,7 @@
 
 @media screen and (min-width: 800px){
 
-  #equipment .h1, #equipment .text, #equipment .equ_main_block { opacity: 0; }
+  #equipment .h1.hidden, #equipment .text.hidden, #equipment .equ_main_block.hidden { opacity: 0; }
   #equipment .h1.animated {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -262,7 +262,7 @@
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
   }
-  #equipment #qualities .quality { opacity: 0; }
+  #equipment #qualities.hidden .quality { opacity: 0; }
   #equipment #qualities.animated .quality {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -279,11 +279,11 @@
   
 }
 @media screen and (min-width: 800px){
-	#catalog .h1 { opacity: 0; }
+	#catalog.hidden .h1 { opacity: 0; }
 	#catalog.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#catalog .tab_buttons { opacity: 0; }
+	#catalog.hidden .tab_buttons { opacity: 0; }
 	#catalog.animated .tab_buttons { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: .25s;  animation-delay: .25s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#catalog .tab .product_item { opacity: 0; }
+	#catalog.hidden .tab .product_item { opacity: 0; }
 	#catalog.animated .tab .product_item { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
 	#catalog.animated .tab .product_item:nth-child(1) { -webkit-animation-delay: .5s;  animation-delay: .5s; }
 	#catalog.animated .tab .product_item:nth-child(2) { -webkit-animation-delay: .7s;  animation-delay: .7s; }
@@ -295,7 +295,7 @@
 }
 
 @media screen and (min-width: 800px){
-  #action .h1 { opacity: 0; }
+  #action.hidden .h1 { opacity: 0; }
   #action.animated .h1 {
       -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -304,7 +304,7 @@
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
   }
-  #action .action_item {
+  #action.hidden .action_item {
     opacity: 0;
   }
   #action.animated .action_item:nth-child(1) {
@@ -316,11 +316,11 @@
 }
 
 @media screen and (min-width: 800px){
-	#working .h1 { opacity: 0; }
+	#working.hidden .h1 { opacity: 0; }
 	#working.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#working .tab_buttons { opacity: 0; }
+	#working.hidden .tab_buttons { opacity: 0; }
 	#working.animated .tab_buttons { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: .25s;  animation-delay: .25s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#working .tab .working_item { opacity: 0; }
+	#working.hidden .tab .working_item { opacity: 0; }
 	#working.animated .tab .working_item { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: zoomIn; }
 	#working.animated .tab .working_item:nth-child(1) { -webkit-animation-delay: .5s;  animation-delay: .5s; }
 	#working.animated .tab .working_item:nth-child(2) { -webkit-animation-delay: .7s;  animation-delay: .7s; }
@@ -330,9 +330,9 @@
 }
 
 @media screen and (min-width: 800px){
-	#turnkey_work .h1 { opacity: 0; }
+	#turnkey_work.hidden .h1 { opacity: 0; }
 	#turnkey_work.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: zoomIn; animation-name: zoomIn; }
-	#turnkey_work .turnkey_work_stages li { opacity: 0; }
+	#turnkey_work.hidden .turnkey_work_stages li { opacity: 0; }
 	#turnkey_work.animated .turnkey_work_stages li { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; }
 	#turnkey_work.animated .turnkey_work_stages li:nth-child(1) { -webkit-animation-delay: .5s;  animation-delay: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInRight; }
 	#turnkey_work.animated .turnkey_work_stages li:nth-child(2) { -webkit-animation-delay: .7s;  animation-delay: .7s; -webkit-animation-name: fadeInUp; animation-name: fadeInDown; }
@@ -347,13 +347,13 @@
 
 
 @media screen and (min-width: 800px){
-	#standards .h1 { opacity: 0; }
+	#standards.hidden .h1 { opacity: 0; }
 	#standards.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#standards .tab_buttons { opacity: 0; }
+	#standards.hidden .tab_buttons { opacity: 0; }
 	#standards.animated .tab_buttons { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: .25s;  animation-delay: .25s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#standards .video { opacity: 0; }
+	#standards.hidden .video { opacity: 0; }
 	#standards.animated .video { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: .25s;  animation-delay: .25s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
-	#standards .tab .standards_item { opacity: 0; }
+	#standards.hidden .tab .standards_item { opacity: 0; }
 	#standards.animated .tab .standards_item { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: zoomIn; }
 	#standards.animated .tab .standards_item:nth-child(1) { -webkit-animation-delay: .5s;  animation-delay: .5s; }
 	#standards.animated .tab .standards_item:nth-child(2) { -webkit-animation-delay: .7s;  animation-delay: .7s; }
@@ -363,9 +363,9 @@
 }
 
 @media screen and (min-width: 800px){
-	#sertificates .text { opacity: 0; }
+	#sertificates.hidden .text { opacity: 0; }
 	#sertificates.animated .text { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: .25s;  animation-delay: .25s; -webkit-animation-name: fadeInUp; animation-name: fadeInRight; }
-	#sertificates .sertificates_slider div img { opacity: 0; }
+	#sertificates.hidden .sertificates_slider div img { opacity: 0; }
 	#sertificates.animated .sertificates_slider div img { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: zoomIn; }
 	#sertificates.animated .sertificates_slider div:nth-child(1) img { -webkit-animation-delay: .5s;  animation-delay: .5s; }
 	#sertificates.animated .sertificates_slider div:nth-child(2) img { -webkit-animation-delay: .7s;  animation-delay: .7s; }
@@ -379,9 +379,9 @@
 }
 
 @media screen and (min-width: 800px){
-	#about .h1 { opacity: 0; }
+	#about .h1.hidden { opacity: 0; }
 	#about .h1.animated { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#about .about_item { opacity: 0; }
+	#about .about_item.hidden { opacity: 0; }
 	#about .about_item.animated { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
 	#about .about_item.animated:nth-child(1) { -webkit-animation-delay: .5s;  animation-delay: .5s; }
 	#about .about_item.animated:nth-child(2) { -webkit-animation-delay: .7s;  animation-delay: .7s; }
@@ -391,9 +391,9 @@
 }
 
 @media screen and (min-width: 800px){
-	#other_jobs .h1 { opacity: 0; }
+	#other_jobs.hidden .h1 { opacity: 0; }
 	#other_jobs.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#other_jobs .slide { opacity: 0; }
+	#other_jobs.hidden .slide { opacity: 0; }
 	#other_jobs.animated .slide { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-delay: 0.8s; animation-delay: 0.8s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
 	#other_jobs.animated .slide:nth-child(1) { -webkit-animation-duration: .2s;  animation-duration: .2s; }
 	#other_jobs.animated .slide:nth-child(2) { -webkit-animation-duration: .4s;  animation-duration: .4s; }
@@ -412,9 +412,9 @@
 }
 
 @media screen and (min-width: 1100px){
-	#reviews .h1 { opacity: 0; }
+	#reviews.hidden .h1 { opacity: 0; }
 	#reviews.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
-	#reviews .review_item { opacity: 0; }
+	#reviews.hidden .review_item { opacity: 0; }
 	#reviews.animated .review_item { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-delay: 0.8s; animation-delay: 0.8s;  }
 	#reviews.animated .review_item:nth-child(1) { -webkit-animation-duration: .2s;  animation-duration: .2s; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; }
 	#reviews.animated .review_item:nth-child(2) { -webkit-animation-duration: .4s;  animation-duration: .4s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
@@ -425,12 +425,12 @@
 }
 
 @media screen and (min-width: 800px){
-	#contacts .h1 { opacity: 0; }
+	#contacts.hidden .h1 { opacity: 0; }
 	#contacts.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
 	
-	#contacts .map { opacity: 0; }
+	#contacts.hidden .map { opacity: 0; }
 	#contacts.animated .map { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: .75s;  animation-delay: .75s; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; }
-	#contacts .contacts_info { opacity: 0; }
+	#contacts.hidden .contacts_info { opacity: 0; }
 	#contacts.animated .contacts_info { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: zoomIn; -webkit-animation-delay: .5s;  animation-delay: .5s; }
 	
   
