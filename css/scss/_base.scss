@@ -44,9 +44,7 @@ $max-width: 1560px;
 	-o-transition: $property 0.6s ease-out 0s;
 	transition: $property 0.6s ease-out 0s;
 }
-html {
-	background: none;
-}
+
 body {   
     font-family: $font_family_os;
     font-size: 17px;
@@ -415,16 +413,4 @@ a.button:active {
 
 .fancybox-enabled {
     overflow: auto;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
-{
-    html{
-        overflow: hidden;
-        height: 100%;    
-    }
-    body{
-        overflow: auto;
-        height: 100%;
-    }
 }

@@ -66,10 +66,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-html {
-  background: none;
-}
-
 body {
   font-family: "MuseoSansCyrl", Arial, Helvetica, sans-serif;
   font-size: 17px;
@@ -433,17 +429,6 @@ a.button:active {
   overflow: auto;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html {
-    overflow: hidden;
-    height: 100%;
-  }
-
-  body {
-    overflow: auto;
-    height: 100%;
-  }
-}
 /* start header styles */
 #header {
   width: 100%;
