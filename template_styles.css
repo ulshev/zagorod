@@ -815,6 +815,11 @@ footer #copy {
 #main_slider .slider .slide .white {
   font-size: 40px;
   line-height: 145%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #main_slider .slider .slide ul {
   padding-top: 90px;
