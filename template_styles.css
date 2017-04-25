@@ -1967,7 +1967,6 @@ footer #copy {
   background-color: #000;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
 }
