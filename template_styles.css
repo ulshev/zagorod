@@ -66,6 +66,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html {
+  background: none;
+}
+
 body {
   font-family: "MuseoSansCyrl", Arial, Helvetica, sans-serif;
   font-size: 17px;
@@ -1967,6 +1971,7 @@ footer #copy {
   background-color: #000;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
 }
