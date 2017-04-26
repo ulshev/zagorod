@@ -6,6 +6,7 @@ html, body {
   width: 100%;
   height: 100%;
   position: relative;
+  background: #ffffff;
 }
 
 a {
@@ -429,6 +430,16 @@ a.button:active {
   overflow: auto;
 }
 
+/*/@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+//}*/
 /* start header styles */
 #header {
   width: 100%;
@@ -4965,6 +4976,9 @@ footer #copy {
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
   }
+}
+html {
+  background: none;
 }
 
 /*# sourceMappingURL=template_styles.css.map */

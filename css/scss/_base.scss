@@ -414,3 +414,14 @@ a.button:active {
 .fancybox-enabled {
     overflow: auto;
 }
+
+/*/@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+//}*/
