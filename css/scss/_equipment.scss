@@ -27,9 +27,12 @@
 	ul {
 	    padding-bottom: 15px;
 	    li {
-		background-size: 21px;
+		//background-size: 21px;
 		margin-bottom: 25px;
-		background-position: left 4px;
+		//background-position: left 4px;
+		
+		background: none;
+		padding-left: 0;
 	    }
 	}
 	
@@ -57,7 +60,8 @@
 	}
 	
 	.left, .right {
-	    width: 470/1560*100%;
+	    //width: 470/1560*100%;
+	    width: 45%;
 	    padding-top: 50px;
 	}
 	
@@ -69,6 +73,10 @@
 		padding-right: 35px;
 		padding-left: 0;
 		background-position: right 4px;
+		
+		.icon {
+		    vertical-align: middle;
+		}
 	    }
 	}
 	.right {
@@ -76,7 +84,8 @@
 	}
 	
 	.center {
-	    margin: 0 480/1560*100%;
+	    //margin: 0 480/1560*100%;
+	    margin: 0 55% 0 0;
 	    position: relative;
 	
 	    &:after {
@@ -87,11 +96,12 @@
 		max-width: 100%;
 		position: absolute;
 		top: 50%;
-		-webkit-transform: translate(0, -40%) scale(1);
-		-moz-transform: translate(0,-40%) scale(1);
-		-ms-transform: translate(0, -40%) scale(1);
-		-o-transform: translate(0, -40%) scale(1);
-		transform: translate(0, -40%) scale(1);
+		left: 50%;
+		-webkit-transform: translate(-50%, -40%) scale(1);
+		-moz-transform: translate(-50%,-40%) scale(1);
+		-ms-transform: translate(-50%, -40%) scale(1);
+		-o-transform: translate(-50%, -40%) scale(1);
+		transform: translate(-50%, -40%) scale(1);
 	    }
 	}
     }

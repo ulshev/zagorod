@@ -1405,9 +1405,9 @@ footer #copy {
   padding-bottom: 15px;
 }
 #equipment .equ_main_block ul li {
-  background-size: 21px;
   margin-bottom: 25px;
-  background-position: left 4px;
+  background: none;
+  padding-left: 0;
 }
 #equipment .equ_main_block .price {
   font-size: 30px;
@@ -1428,7 +1428,7 @@ footer #copy {
   width: 110px;
 }
 #equipment .equ_main_block .left, #equipment .equ_main_block .right {
-  width: 30.12821%;
+  width: 45%;
   padding-top: 50px;
 }
 #equipment .equ_main_block .left {
@@ -1440,11 +1440,14 @@ footer #copy {
   padding-left: 0;
   background-position: right 4px;
 }
+#equipment .equ_main_block .left li .icon {
+  vertical-align: middle;
+}
 #equipment .equ_main_block .right {
   float: right;
 }
 #equipment .equ_main_block .center {
-  margin: 0 30.76923%;
+  margin: 0 55% 0 0;
   position: relative;
 }
 #equipment .equ_main_block .center:after {
@@ -1456,11 +1459,12 @@ footer #copy {
   max-width: 100%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -40%) scale(1);
-  -moz-transform: translate(0, -40%) scale(1);
-  -ms-transform: translate(0, -40%) scale(1);
-  -o-transform: translate(0, -40%) scale(1);
-  transform: translate(0, -40%) scale(1);
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%) scale(1);
+  -moz-transform: translate(-50%, -40%) scale(1);
+  -ms-transform: translate(-50%, -40%) scale(1);
+  -o-transform: translate(-50%, -40%) scale(1);
+  transform: translate(-50%, -40%) scale(1);
 }
 #equipment #qualities {
   border-top: 1px solid #ededed;
