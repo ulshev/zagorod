@@ -1,0 +1,86 @@
+/* start popups styles */
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.25);
+    
+    .gUniFormModalWindowContainer {
+        border-radius: 0px;
+        background: #fff;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 700px;
+        background-color: #f2f2f2;
+    }                
+    
+    .gUniFormModalWindowExit {
+        width: 26px;
+        height: 27px;
+        top: 10px;
+        right: 10px;
+        background: url("images/popup_close.png") no-repeat scroll 0 0;
+        
+        
+        &:hover {
+            background-position: 100% 0;
+        }
+    }
+    
+    .uFormLine {
+        display: inline-block;
+    }
+    
+    .uFormHeading {
+        font-family: $font_family_os;
+        color: $color_a;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    &.form {
+        
+        form {
+            background-color: #f2f2f2;
+            padding: 20px 0 25px;
+            text-align:  center;
+        }
+        
+        input, textarea, select {
+            color: #222;
+            border-bottom-color: #818181;
+            width: 259px;
+            
+            &:focus {
+                border-color: transparent;
+                border-bottom-color: #818181;
+                background: transparent;
+            }
+        
+            &::-webkit-input-placeholder {opacity: 1; color: #333;}
+            &::-moz-placeholder          {opacity: 1; color: #333;}/* Firefox 19+ */
+            &:-moz-placeholder           {opacity: 1; color: #333;}/* Firefox 18- */
+            &:-ms-input-placeholder      {opacity: 1; color: #333;}   
+        }
+        
+        .gUniForm .uFormButton {
+           float: none;
+           display: inline-block;
+           width: auto;
+           
+           .button {
+                line-height: 22px;
+                background-color: #ed6e2e;
+                
+                &:hover {
+                    background-color: #d1632b;
+                }
+                &:active {
+                    position: static;
+                }
+           }
+        }
+    }
+}
+
+/* end popups styles */

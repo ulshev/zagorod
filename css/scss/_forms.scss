@@ -1,6 +1,6 @@
 /* start forms styles */
 
-.form {
+.main_section.form {
     background-color: #000;
     background-position: center;
     background-size: cover;
@@ -49,7 +49,8 @@
 	padding-top: 10px;
 	padding-bottom: 30px;
     }
-    
+}
+.form {   
     form {
 	padding-top: 20px;
     }
@@ -128,7 +129,7 @@
     
 
 @media screen and (max-width: 1600px) {
-    .form {
+    .main_section.form {
 	.in {
 	    padding: 50px 20px 25px;
 	    z-index: 2;
@@ -148,7 +149,8 @@
 	    padding-top: 10px;
 	    padding-bottom: 30px
 	}
-	
+    }
+    .form { 
 	input, textarea, select {
 	    margin: 0 10px 30px;
 	    width: 337px;
@@ -166,7 +168,7 @@
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1000px) {
-    .form {
+    .main_section.form {
 	.in {
 	    padding: 40px 20px 15px;
 	    z-index: 2;
@@ -186,6 +188,8 @@
 	    padding-top: 10px;
 	    padding-bottom: 30px
 	}
+    }
+    .main_section.form { 
 	
 	input, textarea, select {
 	    margin: 0 10px 30px;
@@ -211,7 +215,7 @@
     }
 }
 @media screen and (max-width: 999px) {
-    .form {
+    .main_section.form {
 	.in {
 	    padding: 30px 20px 5px;
 	    z-index: 2;
@@ -232,6 +236,8 @@
 	    padding-bottom: 30px
 	}
 	
+    }
+    .form { 
 	form {
 	    padding-top: 0px;
 	}
@@ -263,7 +269,7 @@
 //}
 
 @media screen and (max-width: 590px) {
-    .form {
+    .main_section.form {
 	
 	.h2 {
 	    font-size: 25px;
@@ -275,6 +281,8 @@
 	    line-height: 145%;
 	}
 	
+    }
+    .form { 
 	input, textarea, select {
 	    width: 220px;
 	    font-size: 15px;
@@ -288,7 +296,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .form {
+    .main_section.form {
 	
 	.h2 {
 	    font-size: 22px;
@@ -300,10 +308,26 @@
 	    line-height: 145%;
 	}
 	
+    }
+    .form { 
 	textarea, input.textarea {
 	    min-width: 280px;
 	    max-width: 280px;
 	}
+    }
+}
+
+/* for IE9 */
+@media screen and (min-width:0\0) { 
+    .form {
+	background-attachment: inherit;
+    }
+}
+
+/* for IE10 & IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+    .form {
+	background-attachment: inherit;
     }
 }
 

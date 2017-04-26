@@ -1974,7 +1974,7 @@ footer #copy {
 }
 /* end catalog styles */
 /* start forms styles */
-.form {
+.main_section.form {
   background-color: #000;
   background-position: center;
   background-size: cover;
@@ -1982,7 +1982,7 @@ footer #copy {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.form:after {
+.main_section.form:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1992,32 +1992,33 @@ footer #copy {
   z-index: 1;
   background: url(images/bg_grid.png);
 }
-.form .in {
+.main_section.form .in {
   color: #fff;
   text-align: center;
   position: relative;
   z-index: 2;
   padding: 60px 20px 35px;
 }
-.form .h2 {
+.main_section.form .h2 {
   font-size: 35px;
   line-height: 130%;
   font-weight: 500;
 }
-.form p {
+.main_section.form p {
   font-weight: 100;
   font-size: 25px;
   line-height: 145%;
 }
-.form .green {
+.main_section.form .green {
   color: #8fab32;
   margin-bottom: 5px;
   font-weight: 200;
 }
-.form .button_block {
+.main_section.form .button_block {
   padding-top: 10px;
   padding-bottom: 30px;
 }
+
 .form form {
   padding-top: 20px;
 }
@@ -2107,22 +2108,23 @@ footer #copy {
 }
 
 @media screen and (max-width: 1600px) {
-  .form .in {
+  .main_section.form .in {
     padding: 50px 20px 25px;
     z-index: 2;
   }
-  .form .h2 {
+  .main_section.form .h2 {
     font-size: 32px;
     line-height: 130%;
   }
-  .form p {
+  .main_section.form p {
     font-size: 22px;
     line-height: 145%;
   }
-  .form .button_block {
+  .main_section.form .button_block {
     padding-top: 10px;
     padding-bottom: 30px;
   }
+
   .form input, .form textarea, .form select {
     margin: 0 10px 30px;
     width: 337px;
@@ -2137,35 +2139,36 @@ footer #copy {
   }
 }
 @media screen and (max-width: 1300px) and (min-width: 1000px) {
-  .form .in {
+  .main_section.form .in {
     padding: 40px 20px 15px;
     z-index: 2;
   }
-  .form .h2 {
+  .main_section.form .h2 {
     font-size: 29px;
     line-height: 130%;
   }
-  .form p {
+  .main_section.form p {
     font-size: 20px;
     line-height: 145%;
   }
-  .form .button_block {
+  .main_section.form .button_block {
     padding-top: 10px;
     padding-bottom: 30px;
   }
-  .form input, .form textarea, .form select {
+
+  .main_section.form input, .main_section.form textarea, .main_section.form select {
     margin: 0 10px 30px;
     width: 287px;
     height: 40px;
     font-size: 16px;
   }
-  .form textarea, .form input.textarea {
+  .main_section.form textarea, .main_section.form input.textarea {
     min-width: 580px;
     max-width: 580px;
     min-height: 40px;
     max-height: 40px;
   }
-  .form input[type="submit"], .form input[type="reset"] {
+  .main_section.form input[type="submit"], .main_section.form input[type="reset"] {
     margin-right: 0;
     width: 265px;
     height: 58px;
@@ -2174,22 +2177,23 @@ footer #copy {
   }
 }
 @media screen and (max-width: 999px) {
-  .form .in {
+  .main_section.form .in {
     padding: 30px 20px 5px;
     z-index: 2;
   }
-  .form .h2 {
+  .main_section.form .h2 {
     font-size: 29px;
     line-height: 130%;
   }
-  .form p {
+  .main_section.form p {
     font-size: 20px;
     line-height: 145%;
   }
-  .form .button_block {
+  .main_section.form .button_block {
     padding-top: 10px;
     padding-bottom: 30px;
   }
+
   .form form {
     padding-top: 0px;
   }
@@ -2211,14 +2215,15 @@ footer #copy {
   }
 }
 @media screen and (max-width: 590px) {
-  .form .h2 {
+  .main_section.form .h2 {
     font-size: 25px;
     line-height: 130%;
   }
-  .form p {
+  .main_section.form p {
     font-size: 18px;
     line-height: 145%;
   }
+
   .form input, .form textarea, .form select {
     width: 220px;
     font-size: 15px;
@@ -2229,17 +2234,30 @@ footer #copy {
   }
 }
 @media screen and (max-width: 450px) {
-  .form .h2 {
+  .main_section.form .h2 {
     font-size: 22px;
     line-height: 130%;
   }
-  .form p {
+  .main_section.form p {
     font-size: 16px;
     line-height: 145%;
   }
+
   .form textarea, .form input.textarea {
     min-width: 280px;
     max-width: 280px;
+  }
+}
+/* for IE9 */
+@media screen and (min-width: 0\0) {
+  .form {
+    background-attachment: inherit;
+  }
+}
+/* for IE10 & IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form {
+    background-attachment: inherit;
   }
 }
 /* end forms styles */
@@ -3981,6 +3999,7 @@ footer #copy {
   }
 }
 /* end contacts styles */
+/* start animate styles */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -4977,6 +4996,90 @@ footer #copy {
     animation-delay: .5s;
   }
 }
+/* and animate styles */
+/* start popups styles */
+.popup {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.popup .gUniFormModalWindowContainer {
+  border-radius: 0px;
+  background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  width: 700px;
+  background-color: #f2f2f2;
+}
+.popup .gUniFormModalWindowExit {
+  width: 26px;
+  height: 27px;
+  top: 10px;
+  right: 10px;
+  background: url("images/popup_close.png") no-repeat scroll 0 0;
+}
+.popup .gUniFormModalWindowExit:hover {
+  background-position: 100% 0;
+}
+.popup .uFormLine {
+  display: inline-block;
+}
+.popup .uFormHeading {
+  font-family: "MuseoSansCyrl", Arial, Helvetica, sans-serif;
+  color: #8fab32;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+}
+.popup.form form {
+  background-color: #f2f2f2;
+  padding: 20px 0 25px;
+  text-align: center;
+}
+.popup.form input, .popup.form textarea, .popup.form select {
+  color: #222;
+  border-bottom-color: #818181;
+  width: 259px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.popup.form input:focus, .popup.form textarea:focus, .popup.form select:focus {
+  border-color: transparent;
+  border-bottom-color: #818181;
+  background: transparent;
+}
+.popup.form input::-webkit-input-placeholder, .popup.form textarea::-webkit-input-placeholder, .popup.form select::-webkit-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+.popup.form input::-moz-placeholder, .popup.form textarea::-moz-placeholder, .popup.form select::-moz-placeholder {
+  opacity: 1;
+  color: #333;
+}
+.popup.form input:-moz-placeholder, .popup.form textarea:-moz-placeholder, .popup.form select:-moz-placeholder {
+  opacity: 1;
+  color: #333;
+}
+.popup.form input:-ms-input-placeholder, .popup.form textarea:-ms-input-placeholder, .popup.form select:-ms-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+.popup.form .gUniForm .uFormButton {
+  float: none;
+  display: inline-block;
+  width: auto;
+}
+.popup.form .gUniForm .uFormButton .button {
+  line-height: 22px;
+  background-color: #ed6e2e;
+}
+.popup.form .gUniForm .uFormButton .button:hover {
+  background-color: #d1632b;
+}
+.popup.form .gUniForm .uFormButton .button:active {
+  position: static;
+}
+
+/* end popups styles */
 html {
   background: none;
 }
