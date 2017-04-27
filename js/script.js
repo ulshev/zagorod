@@ -272,11 +272,11 @@ $(document).ready(function() {
 					loaded: false,
 					interval: 100,
 				},
-				"#equipment #qualities": {
+				/*"#equipment #qualities": {
 					position: 0,
 					loaded: false,
 					interval: 100,
-				},
+				},*/
 				"#catalog": {
 					position: 0,
 					loaded: false,

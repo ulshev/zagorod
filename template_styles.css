@@ -4370,8 +4370,8 @@ footer #copy {
     animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
     animation-duration: .5s;
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
   }
 
   #equipment .text.animated {
