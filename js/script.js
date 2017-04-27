@@ -262,11 +262,11 @@ $(document).ready(function() {
 					loaded: false,
 					interval: 100,
 				},
-				"#equipment .text": {
+				/*"#equipment .text": {
 					position: 0,
 					loaded: false,
 					interval: 100,
-				},
+				},*/
 				"#equipment .equ_main_block": {
 					position: 0,
 					loaded: false,
