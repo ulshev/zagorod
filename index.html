@@ -11,11 +11,13 @@
 	<script type="text/javascript" src="js/jquery.malihu.PageScroll2id.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/script.js" type="text/javascript"></script> 
 	
 	<title>Загород</title>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css"  media="all" href="css/jquery.mCustomScrollbar.min.css" />
 	<link rel="stylesheet" type="text/css"  media="all" href="css/font.css" />
 	
 	<link rel="stylesheet" type="text/css"  media="all" href="css/ModalWindow.css" /><!-- !!! Эти стили не подключать! Они взяты отсюда http://77.246.158.124/ -->
@@ -65,9 +67,9 @@
 	
 	<div class="main_section" id="main_slider">
 		<div id="background_video">
-			<video id="bg_video" loop="loop" autoplay="autoplay" preload="auto" muted="">
-				<!--source src="http://dw-development.ru/video/Landscapes-Volume-4K-(UHD)-YouTube.webm" type="video/webm"></source>
-				<source src="http://dw-development.ru/video/Landscapes-Volume-4K-(UHD)-YouTube.mp4" type="video/mp4"></source-->
+			<video class="bg_video" loop="loop" autoplay="autoplay" preload="auto" muted="">
+				<!--source src="http://dw-development.ru/video/Landscapes-Volume-4K-(UHD)-YouTube.webm" type="video/webm"></source-->
+				<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
 				<p>Ваш браузер не поддерживает воспроизведение видео.</p>
 			</video>
 		</div>
@@ -1367,6 +1369,11 @@
 					<div class="video">
 						<img src="images/standards_vieo.jpg" alt="" >
 						<span class="play">смотреть видео</span>
+						
+						<video class="bg_video" loop="loop" preload="auto" muted="">
+							<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+						</video>
 					</div>
 					<div class="standards_item">
 						<div class="icon"><img src="images/icon_standards1.png" alt="" ></div>
@@ -1402,6 +1409,10 @@
 					<div class="video">
 						<img src="images/standards_vieo2.jpg" alt="" >
 						<span class="play">смотреть видео</span>
+						<video class="bg_video" loop="loop"  preload="auto" muted="">
+							<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+						</video>
 					</div>
 					<div class="standards_item">
 						<div class="icon"><img src="images/icon_standards1.png" alt="" ></div>
@@ -1437,6 +1448,10 @@
 					<div class="video">
 						<img src="images/standards_vieo3.jpg" alt="" >
 						<span class="play">смотреть видео</span>
+						<video class="bg_video" loop="loop" preload="auto" muted="">
+							<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+						</video>
 					</div>
 					<div class="standards_item">
 						<div class="icon"><img src="images/icon_standards1.png" alt="" ></div>
@@ -1647,6 +1662,10 @@
 				   <div class="video">
 					<img src="images/video1.jpg" alt="">
 					<span class="play">смотреть видео</span>
+					<video id="bg_video" loop="loop" preload="auto" muted="">
+						<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+					</video>
 				   </div>
 				   <div class="text">
 					<div class="avatar"><img src="images/ava1.jpg" alt=""></div>          
@@ -1671,6 +1690,10 @@
 				   <div class="video">
 					<img src="images/video2.jpg" alt="">
 					<span class="play">смотреть видео</span>
+					<video class="bg_video" loop="loop" preload="auto" muted="">
+						<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+					</video>
 				   </div>
 				   <div class="text">
 					<div class="avatar"><img src="images/ava2.jpg" alt=""></div>          
@@ -1696,6 +1719,10 @@
 				   <div class="video">
 					<img src="images/video1.jpg" alt="">
 					<span class="play">смотреть видео</span>
+					<video class="bg_video" loop="loop" preload="auto" muted="">
+						<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+					</video>
 				   </div>
 				   <div class="text">
 					<div class="avatar"><img src="images/ava1.jpg" alt=""></div>          
@@ -1720,6 +1747,10 @@
 				   <div class="video">
 					<img src="images/video2.jpg" alt="">
 					<span class="play">смотреть видео</span>
+					<video class="bg_video" loop="loop" preload="auto" muted="">
+						<source src="video/vodeo_bg_main.mp4" type="video/mp4"></source>
+						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+					</video>
 				   </div>
 				   <div class="text">
 					<div class="avatar"><img src="images/ava2.jpg" alt=""></div>          
@@ -1885,7 +1916,7 @@
 		</div>
 	</div>
 	
-<!-- добавить классы form и popup product_more --><div class="form popup product_more gUniFormModalWindow" style="display: none;"> 
+<!-- добавить классы form и popup product_more --><div class="form popup product_more gUniFormModalWindow" style="display: block;"> 
 		<div class="gUniFormHideScrollBar">
 			<div class="gUniFormCn100">
 				<div class="gUniFormModalWindowContainer">
@@ -1895,6 +1926,14 @@
 							<div class="img"><img src="images/product_foto1.png" alt="" ></div>
 							<div class="text">
 								<div class="h3">Биодека 3</div>
+								
+								<div class="description">
+									<span class="people">3 человека</span>
+									<span class="electricity">1,08 кВт/сут</span>
+									<span class="throughput">500 л/сут</span>
+									<span class="max-volume">140 л</span>
+									<span class="mounting">Монтаж: 14 000 р.</span>
+								</div>
 								<ul>
 									<li>Однорежимная работа ЛОС BioDeka делает всю конструкцию более простой и надёжной.</li>
 									<li>Цилиндрическая форма устройства позволила повысить прочность корпуса, снизив при этом вес установки.</li>

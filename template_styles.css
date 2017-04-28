@@ -744,7 +744,7 @@ footer #copy {
   z-index: 2;
   background: url(images/bg_grid.png);
 }
-#main_slider #background_video #bg_video {
+#main_slider #background_video video {
   background-color: transparent;
   pointer-events: none;
   min-height: 100%;
@@ -3016,6 +3016,19 @@ footer #copy {
   color: #fff;
   cursor: pointer;
 }
+#standards .video video {
+  background-color: transparent;
+  pointer-events: none;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
 #standards .standards_item {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
   background-color: #fff;
@@ -3546,6 +3559,19 @@ footer #copy {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
+}
+#reviews .review_item .video video {
+  background-color: transparent;
+  pointer-events: none;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 #reviews .review_item .text {
   margin-left: 52%;
@@ -5229,7 +5255,7 @@ footer #copy {
   margin: 0 auto;
 }
 .popup .detailed_info {
-  padding: 30px 60px;
+  padding: 30px 20px 30px 60px;
   background-color: #fff;
 }
 .popup .detailed_info:after {
@@ -5247,6 +5273,7 @@ footer #copy {
 }
 .popup .detailed_info .text {
   margin-left: 26.87047%;
+  max-height: 350px;
 }
 .popup .detailed_info .h3 {
   margin-bottom: 25px;
@@ -5267,6 +5294,47 @@ footer #copy {
   position: absolute;
   top: 9px;
   left: 0;
+}
+.popup .detailed_info .description span {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 7px 0 7px 45px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.popup .detailed_info .description span.people {
+  background-image: url(images/icon_people.png);
+}
+.popup .detailed_info .description span.electricity {
+  background-image: url(images/icon_electricity.png);
+}
+.popup .detailed_info .description span.throughput {
+  background-image: url(images/icon_throughput.png);
+}
+.popup .detailed_info .description span.max-volume {
+  background-image: url(images/icon_max-volume.png);
+}
+.popup .detailed_info .description span.mounting {
+  background-image: url(images/icon_mounting.png);
+}
+.popup .detailed_info .description span.volume {
+  background-image: url(images/icon_volume.png);
+}
+.popup .mCSB_container {
+  padding-right: 50px;
+}
+.popup .mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools, .popup .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 1;
+  background-color: #f2f2f2;
+  width: 17px;
+  border-radius: 9px;
+}
+.popup .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 17px;
+  border-radius: 9px;
+  background-color: #999999;
 }
 .popup .button_block {
   text-align: center;
@@ -5383,6 +5451,11 @@ footer #copy {
     line-height: 130%;
     margin-bottom: 10px;
   }
+  .popup .detailed_info .description span {
+    padding: 7px 0 7px 35px;
+    margin-bottom: 5px;
+    background-size: 24px auto;
+  }
   .popup.form form {
     padding: 0px 0 25px;
   }
@@ -5410,6 +5483,15 @@ footer #copy {
   .popup .detailed_info .text {
     margin-left: 0;
   }
+  .popup .mCSB_container {
+    padding-right: 30px;
+  }
+  .popup .mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools, .popup .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+    width: 10px;
+  }
+  .popup .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 10px;
+  }
   .popup .uFormLine {
     width: 45%;
   }
@@ -5422,6 +5504,11 @@ footer #copy {
   }
   .popup.product_more .uFormHeading {
     font-size: 18px;
+  }
+  .popup .detailed_info .description span {
+    padding: 7px 0 7px 35px;
+    margin-bottom: 5px;
+    background-size: 24px auto;
   }
   .popup p {
     font-size: 15px;

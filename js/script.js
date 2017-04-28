@@ -378,13 +378,10 @@ $(document).ready(function() {
 	    $(this).attr('placeholder',$(this).data('placeholder'));
 	});
 	
-	/*$(window).on('load scroll', function(e) {
-		console.log($(window).scrollTop());
-		console.log($('.main_section').offset().top - 500);
-		console.log('***********************************************');
-		if($('.main_section').length && $(window).scrollTop() >= $('.main_section').offset().top - 500){
-		  $('.main_section').addClass('animated');
-		}
-	});*/
-
+	$(window).on("load",function(){
+		$(".popup .text").mCustomScrollbar({
+			theme:"minimal-dark"
+		});
+        });
 });
+
