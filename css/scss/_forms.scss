@@ -319,14 +319,14 @@
 
 /* for IE9 */
 @media screen and (min-width:0\0) { 
-    .form {
+    .main_section.form {
 	background-attachment: inherit;
     }
 }
 
 /* for IE10 & IE11 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
-    .form {
+    .main_section.form {
 	background-attachment: inherit;
     }
 }

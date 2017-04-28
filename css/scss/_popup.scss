@@ -6,13 +6,22 @@
     .gUniFormModalWindowContainer {
         border-radius: 0px;
         background: #fff;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+        padding: 0;
         width: 700px;
         background-color: #f2f2f2;
+        width: 90%;
+        max-width: 1230px;
     }                
     
+        
+    &.product_more .gUniFormModalWindowContainer {
+        max-width: 1243px;
+    }
+     &.sent .gUniFormModalWindowContainer {
+        max-width: 930px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
     .gUniFormModalWindowExit {
         width: 26px;
         height: 27px;
@@ -28,9 +37,18 @@
     
     .uFormLine {
         display: inline-block;
+        width: 30%;
+        margin: 0 1.5%;
+        overflow: hidden;
+        
+        input {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     
-    .uFormHeading {
+    .uFormHeading, .h3 {
         font-family: $font_family_os;
         color: $color_a;
         text-transform: uppercase;
@@ -38,12 +56,97 @@
         font-weight: 700;
     }
     
+    .uFormHeading {
+        padding-top: 30px;
+        font-size: 31px;
+    }
+    
+    &.product_more .uFormHeading {
+        font-size: 22px;
+    }
+    
+    p {
+        max-width: 1000px;
+        margin: 30px auto 20px;
+        font-size: 30px;
+        line-height: 130%;
+        text-align:  center;
+    }
+    
+    .eFormRequired {
+        font-size: 16px;
+        text-align: left;
+        max-width: 770px;
+        padding: 5px 20px;
+        margin: 0 auto;
+    }
+    
+    .detailed_info {
+        padding: 30px 60px;
+        background-color: #fff;
+        
+        &:after {
+	    @include clear();
+	}
+        
+        .img {
+            float: left;
+            width: 317/1243*100%;
+            text-align: center;
+            
+            img {
+                max-width: 90%;
+            }
+        }
+        
+        .text {
+            margin-left: 334/1243*100%;
+        }
+        
+        .h3 {
+            margin-bottom: 25px;
+        }
+        
+        li {
+	    background: none;
+	    margin-bottom: 5px;
+	    padding-left: 13px;
+	    position: relative;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 130%;
+	    
+	    &:before {
+		content: '';
+		font-size: 0;
+		border: 2px solid $color_a;
+		position: absolute;
+		top: 9px;
+		left: 0;
+	    }
+	}
+    }
+    
+    .button_block {
+        text-align: center;
+        padding-top: 20px;
+        
+        .button {
+            width: 140px;
+        }
+    }
+    
     &.form {
         
+        
         form {
-            background-color: #f2f2f2;
-            padding: 20px 0 25px;
+            padding: 20px 60px 35px;
             text-align:  center;
+        }
+        
+        &.product_more form {
+            padding-left: 30px;
+            padding-right: 30px;
         }
         
         input, textarea, select {
@@ -67,6 +170,7 @@
            float: none;
            display: inline-block;
            width: auto;
+           margin-bottom: 30px;
            
            .button {
                 line-height: 22px;
@@ -81,6 +185,149 @@
            }
         }
     }
+    
+    &.green {
+        .gUniFormModalWindowContainer {
+            color: #fff;
+            background-color: $color_a;
+        }
+        
+        .uFormHeading {
+            color: #fff;
+        }
+        
+        &.form {
+            
+            input, textarea, select {
+                border-bottom-color: #fff;
+                
+                &:focus {
+                    border-bottom-color: #fff;
+                }
+            
+                &::-webkit-input-placeholder {color: #fff;}
+                &::-moz-placeholder          {color: #fff;}/* Firefox 19+ */
+                &:-moz-placeholder           {color: #fff;}/* Firefox 18- */
+                &:-ms-input-placeholder      {color: #fff;}   
+            }
+        }
+        
+    }
 }
+
+@media screen and (max-width: 1000px) {
+    .popup {
+        .uFormHeading {
+            padding-top: 20px;
+            font-size: 25px;
+        }
+        
+        &.product_more .uFormHeading {
+            font-size: 22px;
+        }
+        
+        .gUniFormModalWindowExit {
+            top: 5px;
+            right: 5px;
+        }
+        
+        p {
+            margin: 20px;
+            font-size: 22px;
+            line-height: 130%;
+        }
+        
+        .eFormRequired {
+            font-size: 13px;
+        }
+        .detailed_info {
+            padding: 20px;
+            
+            li {
+                font-size: 14px;
+                line-height: 130%;
+                margin-bottom: 10px;
+            }
+        }
+        
+        &.form {
+            form {
+                padding: 0px 0 25px;
+            }
+        }
+        
+        .uFormLine {
+            width: 29%;
+            
+            input {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .popup {
+        .uFormHeading {
+            font-size: 22px;
+        }
+        
+        &.product_more .uFormHeading {
+            font-size: 22px;
+        }
+        
+        p {
+            font-size: 17px;
+            line-height: 130%;
+        }
+        .detailed_info {
+            .img {
+                display: none;
+            }
+            .text {
+                margin-left: 0;
+            }
+        }
+        
+        .uFormLine {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .popup {
+        .uFormHeading {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
+        
+        &.product_more .uFormHeading {
+            font-size: 18px;
+        }
+        
+        p {
+            font-size: 15px;
+            line-height: 130%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .uFormLine {
+            width: 90%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* end popups styles */

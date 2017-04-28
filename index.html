@@ -222,11 +222,11 @@
 	<!-- Наше оборудование -->
 	<div class="main_section" id="equipment">
 		<div class="in">
-			<!--div class="h1">Наше оборудование</div>
-			<div class="text">7 лет мы специализируемся на монтаже канализации</div-->
 			
-			<div class="equ_main_block">
-				<!--div class="left">
+			<div class="equ_main_block ver1">
+				<div class="h1">Наше оборудование</div>
+				<div class="text">7 лет мы специализируемся на монтаже канализации</div>
+				<div class="left">
 					<div class="h4">Септик </div>
 					<ul>
 						<li>Степень очистки 50-60%</li>
@@ -259,8 +259,15 @@
 					<div class="button_block">
 						<a href="#" class="button">Заказать</a>
 					</div>
-				</div-->
-				 
+				</div>
+				
+				<div class="center">
+					<img src="images/equ_main_img.jpg" alt="" >
+				</div>
+			</div>
+			
+			
+			<div class="equ_main_block ver2">
 				<div class="h1">5 фактов о юнилос астра</div>
 				<div class="right">
 					<ul>
@@ -287,7 +294,7 @@
 					</ul>
 				</div>
 				<div class="center">
-					<img src="images/equ_main_img2.png" alt="" >
+					<img src="images/equ_main_img2.jpg" alt="" >
 				</div>
 				<div class="bottom">
 					<div class="price">от  <span class="cost">64 800 р.</span></div>
@@ -297,7 +304,7 @@
 				</div>
 			</div>
 			
-			<!--div id="qualities">
+			<div id="qualities">
 				<div class="quality">
 					<div class="quality_bg" style="background-image: url('images/quality_bg.jpg');"></div>
 					<div class="quality_name">
@@ -333,7 +340,7 @@
 						<span>50 лет срок службы</span>
 					</div>
 				</div>
-			</div-->
+			</div>
 			
 		</div>
 	</div>
@@ -1799,13 +1806,16 @@
 	
 	
 	
-<div class="form popup gUniFormModalWindow" id="gUniModal_a7dddf84a8320cfc15e5a428c97f3674" style="display: none;">
+<!-- добавить классы form и popup --><div class="form popup gUniFormModalWindow" style="display: none;"> 
 		<div class="gUniFormHideScrollBar">
 			<div class="gUniFormCn100">
 				<div class="gUniFormModalWindowContainer">
 					<div class="gUniFormContainer">
 						<div class="uFormHeading">Обратный звонок</div>
-						<form id="a7dddf84a8320cfc15e5a428c97f3674" enctype="multipart/form-data" action="/test.php?clear_cache=Y" method="post" class="gUniForm" data-id="6" data-unique="a7dddf84a8320cfc15e5a428c97f3674">
+						
+						<p>Оставьте заявку, и наш специалист свяжется с Вами
+для уточнения деталей и формирования индивидуального предложения</p>
+						<form enctype="multipart/form-data" action="/test.php?clear_cache=Y" method="post" class="gUniForm">
 							<div class="uFormLine">
 								<!--div class="uLabel">
 									<div class="uIcon"><img src="/local/components/dweb/uni.form/templates/modal-window/images/nameIcon.png" alt="Имя"></div>
@@ -1827,6 +1837,13 @@
 									<input type="text" name="FORM_FIELD_22" data-required="Y" placeholder="Ваш телефон">
 								</div>
 							</div>
+							
+							<div class="uFormLine">
+								<div class="uError uErrorField22"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_23" placeholder="Ваш email">
+								</div>
+							</div>
 							<div class="uFormGlobalErrors"></div>
 							<div class="uformTools">
 								<div class="uFormButton">
@@ -1836,7 +1853,172 @@
 									<a href="#" class="uFormReset"><img src="/local/components/dweb/uni.form/templates/modal-window/images/resetIcon.png" class="uToolsIcon" alt="Сбросить">Сбросить</a>
 								</div-->
 							</div>
+							
+							
 							<!--div class="eFormRequired">* - обязательные поля</div-->
+							<!--hidden button for enter submit-->
+							<input type="submit" class="eFormHidden" value="">
+						</form>
+					</div>
+					<a href="#" class="gUniFormModalWindowExit"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+<!-- добавить классы form и popup sent --><div class="form popup sent gUniFormModalWindow" style="display: none;"> 
+		<div class="gUniFormHideScrollBar">
+			<div class="gUniFormCn100">
+				<div class="gUniFormModalWindowContainer">
+					<div class="gUniFormContainer">
+						<div class="uFormHeading">Ваша заявка отправлена</div>
+						
+						<p>Спасибо за обращение, <br>наш специалист свяжется с Вами в&nbsp;ближайшее время</p>
+						<div class="button_block">
+							<a href="#" class="button">Закрыть</a>
+						</div>
+					</div>
+					<a href="#" class="gUniFormModalWindowExit"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- добавить классы form и popup product_more --><div class="form popup product_more gUniFormModalWindow" style="display: none;"> 
+		<div class="gUniFormHideScrollBar">
+			<div class="gUniFormCn100">
+				<div class="gUniFormModalWindowContainer">
+					<div class="gUniFormContainer">
+						
+						<div class="detailed_info">
+							<div class="img"><img src="images/product_foto1.png" alt="" ></div>
+							<div class="text">
+								<div class="h3">Биодека 3</div>
+								<ul>
+									<li>Однорежимная работа ЛОС BioDeka делает всю конструкцию более простой и надёжной.</li>
+									<li>Цилиндрическая форма устройства позволила повысить прочность корпуса, снизив при этом вес установки.</li>
+									<li>Надежность системы обеспечивается отсутствием в системе часто входящих из строя узлов: нет электромагнитного клапана, блока управления и поплавкового переключателя в приемной камере (как в станциях Астра и Топас)</li>
+									<li>Имеется возможность легко переоборудовать установку из самотечного варианта в принудительный.</li>
+									<li>Корпус выполнен с грунтозацепами (выступающее за габариты корпуса днище), что делает этот септик приспособленным для условий высоко расположенных грунтовых водах.</li>
+									<li>Лучшее соотношение цена-качество на рынке!!!</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="uFormHeading">Оставить заявку</div>
+						<form enctype="multipart/form-data" action="/test.php?clear_cache=Y" method="post" class="gUniForm">
+							<div class="uFormLine">
+								<div class="uError uErrorField21"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_21" placeholder="Ваше имя">
+								</div>
+							</div>
+							<div class="uFormLine">
+								<div class="uError uErrorField22"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_22" data-required="Y" placeholder="Ваш телефон">
+								</div>
+							</div>
+							<div class="uFormLine">
+								<div class="uError uErrorField22"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_23" placeholder="Ваш email">
+								</div>
+							</div>
+							<div class="uFormGlobalErrors"></div>
+							<div class="uformTools">
+								<div class="uFormButton">
+									<a href="#" class="button uFormSubmit">Отправить заявку</a>
+								</div>
+							</div>
+							
+							<input type="submit" class="eFormHidden" value="">
+						</form>
+					</div>
+					<a href="#" class="gUniFormModalWindowExit"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- добавить классы form и popup --><div class="form popup gUniFormModalWindow" style="display: none;"> 
+		<div class="gUniFormHideScrollBar">
+			<div class="gUniFormCn100">
+				<div class="gUniFormModalWindowContainer">
+					<div class="gUniFormContainer">
+						<div class="uFormHeading">Вы в одном шаге от удобств в Вашем доме</div>
+						
+						<p>Оставьте заявку, и наш специалист свяжется с Вами
+для уточнения деталей и формирования индивидуального предложения</p>
+						<form enctype="multipart/form-data" action="/test.php?clear_cache=Y" method="post" class="gUniForm">
+							<div class="uFormLine">
+								<div class="uError uErrorField21"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_21" placeholder="Ваше имя">
+								</div>
+							</div>
+							
+							<div class="uFormLine">
+								<div class="uError uErrorField22"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_23" placeholder="Ваш email">
+								</div>
+							</div>
+							<div class="uFormGlobalErrors"></div>
+							<div class="uformTools">
+								<div class="uFormButton">
+									<a href="#" class="button uFormSubmit">Обратный звонок</a>
+								</div>
+							</div>
+							
+							
+							<div class="eFormRequired">*Выполним подбор оборудования и расчет стоимости с учетом типа грунта и грунтовых вод на Вашем участке, а так же условий проживания за 15 минут</div>
+							<div class="eFormRequired">**Мы гарантируем конфиденциальность Ваших персональных данных</div>
+							<!--hidden button for enter submit-->
+							<input type="submit" class="eFormHidden" value="">
+						</form>
+					</div>
+					<a href="#" class="gUniFormModalWindowExit"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+<!-- добавить классы form и popup green --><div class="form popup green gUniFormModalWindow" style="display: none;"> 
+		<div class="gUniFormHideScrollBar">
+			<div class="gUniFormCn100">
+				<div class="gUniFormModalWindowContainer">
+					<div class="gUniFormContainer">
+						<div class="uFormHeading">Вы в одном шаге от удобств в Вашем доме</div>
+						
+						<p>Оставьте заявку, и наш специалист свяжется с Вами
+для уточнения деталей и формирования индивидуального предложения</p>
+						<form enctype="multipart/form-data" action="/test.php?clear_cache=Y" method="post" class="gUniForm">
+							<div class="uFormLine">
+								<div class="uError uErrorField21"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_21" placeholder="Ваше имя">
+								</div>
+							</div>
+							
+							<div class="uFormLine">
+								<div class="uError uErrorField22"></div>
+								<div class="uField">
+									<input type="text" name="FORM_FIELD_23" placeholder="Ваш email">
+								</div>
+							</div>
+							<div class="uFormGlobalErrors"></div>
+							<div class="uformTools">
+								<div class="uFormButton">
+									<a href="#" class="button uFormSubmit">Обратный звонок</a>
+								</div>
+							</div>
+							
+							
+							<div class="eFormRequired">*Выполним подбор оборудования и расчет стоимости с учетом типа грунта и грунтовых вод на Вашем участке, а так же условий проживания за 15 минут</div>
+							<div class="eFormRequired">**Мы гарантируем конфиденциальность Ваших персональных данных</div>
 							<!--hidden button for enter submit-->
 							<input type="submit" class="eFormHidden" value="">
 						</form>
