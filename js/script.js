@@ -1,6 +1,7 @@
 
-
 $(document).ready(function() {
+	
+	
 	(function($){
 		$(window).on("load",function(){
 		    $("#main_menu a,a[rel='m_PageScroll2id']").mPageScroll2id({
@@ -10,6 +11,30 @@ $(document).ready(function() {
 		});
 	})(jQuery);
 	
+	/*$('.video').hover(
+		function() {
+		  if ($(this).find('video').length) {
+		    $(this).find('video').get(0).play();
+		  }
+		},
+		function() {
+		  if ($(this).find('video').length) {
+		    $(this).find('video').get(0).pause();
+		  }
+		}
+	);*/
+	
+	$(".play").click(function(){
+		if ($(this).hasClass('fide')) {
+		    $(this).parent('.video').find('video').get(0).pause();
+		    $(this).removeClass('fide');
+		    $(this).parent('.video').find('img').removeClass('hidden');
+		}else{
+		    $(this).parent('.video').find('video').get(0).play();
+		    $(this).addClass('fide');
+		    $(this).parent('.video').find('img').addClass('hidden');
+		}
+	});
 	
 	$('.sertificates_slider').slick({
 		dots: false,

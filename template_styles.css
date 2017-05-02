@@ -2994,12 +2994,15 @@ footer #copy {
   margin-left: 1.28205%;
   margin-bottom: 50px;
   font-size: 17px;
+  overflow: hidden;
 }
 #standards .video img {
   width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+#standards .video img.hidden {
+  visibility: hidden;
 }
 #standards .video .play {
   position: absolute;
@@ -3015,6 +3018,9 @@ footer #copy {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
+}
+#standards .video .play.fide {
+  opacity: 0;
 }
 #standards .video video {
   background-color: transparent;
@@ -3524,6 +3530,7 @@ footer #copy {
   float: left;
   overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 #reviews .review_item .video:after {
   content: '';
@@ -3541,15 +3548,17 @@ footer #copy {
 }
 #reviews .review_item .video img {
   width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+#reviews .review_item .video img.hidden {
+  visibility: hidden;
 }
 #reviews .review_item .video .play {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   background: url(images/icon_play.png) center no-repeat;
@@ -3559,6 +3568,9 @@ footer #copy {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
+}
+#reviews .review_item .video .play.fide {
+  opacity: 0;
 }
 #reviews .review_item .video video {
   background-color: transparent;
