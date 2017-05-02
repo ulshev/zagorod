@@ -202,8 +202,13 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
 @media screen and (max-width: 1600px) {
     #reviews {
         .review_item {
+            height: 370px;
             .text {
                 padding-top: 30px;
+                
+                .comment {
+                    height: 160px;
+                }
             }
         }
     }
@@ -212,6 +217,8 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
 @media screen and (max-width: 1300px){
     #reviews {
         .review_item {
+            height: 350px;
+            
             .text {
                 padding-top: 0px;
                 
@@ -253,6 +260,8 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
                 .comment {
                     font-size: 16px;
                     line-height: 145%;
+                    
+                    //height: 140px;
                 }
             }
         }

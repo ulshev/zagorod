@@ -416,7 +416,7 @@
 	#reviews.hidden .h1 { opacity: 0; }
 	#reviews.animated .h1 { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
 	#reviews.hidden .review_item { opacity: 0; }
-	#reviews.animated .review_item { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-delay: 0.8s; animation-delay: 0.8s;  }
+	#reviews.animated .review_item { opacity: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-delay: 0.8s; animation-delay: 0.8s;  }
 	#reviews.animated .review_item:nth-child(1) { -webkit-animation-duration: .2s;  animation-duration: .2s; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; }
 	#reviews.animated .review_item:nth-child(2) { -webkit-animation-duration: .4s;  animation-duration: .4s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
 	#reviews.animated .review_item:nth-child(3) { -webkit-animation-duration: .6s;  animation-duration: .6s; -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; }

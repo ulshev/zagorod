@@ -3679,11 +3679,20 @@ footer #copy {
 }
 
 @media screen and (max-width: 1600px) {
+  #reviews .review_item {
+    height: 370px;
+  }
   #reviews .review_item .text {
     padding-top: 30px;
   }
+  #reviews .review_item .text .comment {
+    height: 160px;
+  }
 }
 @media screen and (max-width: 1300px) {
+  #reviews .review_item {
+    height: 350px;
+  }
   #reviews .review_item .text {
     padding-top: 0px;
   }
@@ -5113,6 +5122,7 @@ footer #copy {
   }
 
   #reviews.animated .review_item {
+    opacity: 1;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-delay: 0.8s;
