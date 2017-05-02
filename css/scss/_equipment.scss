@@ -472,13 +472,15 @@
 }
 @media screen and (max-width: 999px) {
     #equipment {
-	.equ_main_block.ver1 {
-	    .left, .right, .center {
+	.equ_main_block {
+	    //.left, .right, .center {
 		display: none;
-	    }
+	    //}
 	}
 	.equ_main_block.ver2 {
 	    padding-bottom: 20px;
+	    
+		display: block;
 	    
 	    ul {
 		li {

@@ -11,19 +11,6 @@ $(document).ready(function() {
 		});
 	})(jQuery);
 	
-	/*$('.video').hover(
-		function() {
-		  if ($(this).find('video').length) {
-		    $(this).find('video').get(0).play();
-		  }
-		},
-		function() {
-		  if ($(this).find('video').length) {
-		    $(this).find('video').get(0).pause();
-		  }
-		}
-	);*/
-	
 	$(".play").click(function(){
 		if ($(this).hasClass('fide')) {
 		    $(this).parent('.video').find('video').get(0).pause();
@@ -85,10 +72,10 @@ $(document).ready(function() {
 		slidesToShow: 2,
 		slidesToScroll: 2,
 		//fade: true,
-		//adaptiveHeight: true,
+		adaptiveHeight: true,
 		draggable: false,
 		vertical: true,
-		verticalSwiping: true,
+		//verticalSwiping: true,
 		responsive: [
 		  {
 		    breakpoint: 1100,

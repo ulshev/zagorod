@@ -27,6 +27,9 @@
         padding-bottom: 30px;
         box-sizing: border-box;
         
+        height: 450px;
+        overflow: hidden;
+        
         &:after {
 	    @include clear();
 	}
@@ -158,6 +161,9 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
                 font-size: 18px;
                 line-height: 145%;
                 margin-bottom: 0;
+                
+                overflow: hidden;
+                height: 185px;
             }
         }
     }
@@ -265,6 +271,14 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
             border: 0;
             padding-top: 10px;
             padding-bottom: 10px;
+            
+            height: auto;
+            
+            .text {
+                .comment {
+                    height: auto;
+                }
+            }
         }
         .review_item:nth-child(2n) {
             .video {
@@ -285,6 +299,8 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
                     margin-left: 105px;
                     margin-right: 0;
                 }
+                
+                
             }
         }
         .slick-slider .slick-prev,  .slick-slider .slick-next {

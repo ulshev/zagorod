@@ -1752,11 +1752,12 @@ footer #copy {
   }
 }
 @media screen and (max-width: 999px) {
-  #equipment .equ_main_block.ver1 .left, #equipment .equ_main_block.ver1 .right, #equipment .equ_main_block.ver1 .center {
+  #equipment .equ_main_block {
     display: none;
   }
   #equipment .equ_main_block.ver2 {
     padding-bottom: 20px;
+    display: block;
   }
   #equipment .equ_main_block.ver2 ul li {
     font-size: 16px;
@@ -2230,6 +2231,7 @@ footer #copy {
 }
 .form input[type="submit"], .form input[type="reset"] {
   margin-right: 0;
+  margin-left: 0;
   width: 315px;
   height: 58px;
   font-size: 18px;
@@ -2286,7 +2288,7 @@ footer #copy {
     padding-bottom: 30px;
   }
 
-  .form input, .form textarea, .form select {
+  .form input[type="text"], .form textarea, .form select {
     margin: 0 10px 30px;
     width: 337px;
     height: 42px;
@@ -2317,7 +2319,7 @@ footer #copy {
     padding-bottom: 30px;
   }
 
-  .main_section.form input, .main_section.form textarea, .main_section.form select {
+  .main_section.form input[type="text"], .main_section.form textarea, .main_section.form select {
     margin: 0 10px 30px;
     width: 287px;
     height: 40px;
@@ -2330,9 +2332,7 @@ footer #copy {
     max-height: 40px;
   }
   .main_section.form input[type="submit"], .main_section.form input[type="reset"] {
-    margin-right: 0;
     width: 265px;
-    height: 58px;
     font-size: 18px;
     font-weight: 400;
   }
@@ -2358,7 +2358,7 @@ footer #copy {
   .form form {
     padding-top: 0px;
   }
-  .form input, .form textarea, .form select {
+  .form input[type="text"], .form textarea, .form select {
     margin: 0 10px 20px;
     width: 220px;
     font-size: 16px;
@@ -2374,6 +2374,9 @@ footer #copy {
     font-size: 16px;
     font-weight: 400;
   }
+  .form input[type="submit"]:active, .form input[type="reset"]:active {
+    height: 48px;
+  }
 }
 @media screen and (max-width: 590px) {
   .main_section.form .h2 {
@@ -2385,7 +2388,7 @@ footer #copy {
     line-height: 145%;
   }
 
-  .form input, .form textarea, .form select {
+  .form input[type="text"], .form textarea, .form select {
     width: 220px;
     font-size: 15px;
   }
@@ -3519,6 +3522,8 @@ footer #copy {
   padding-top: 30px;
   padding-bottom: 30px;
   box-sizing: border-box;
+  height: 450px;
+  overflow: hidden;
 }
 #reviews .review_item:after {
   content: "";
@@ -3641,6 +3646,8 @@ footer #copy {
   font-size: 18px;
   line-height: 145%;
   margin-bottom: 0;
+  overflow: hidden;
+  height: 185px;
 }
 #reviews .review_item:nth-child(2n) .video {
   width: 48%;
@@ -3723,6 +3730,10 @@ footer #copy {
     border: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    height: auto;
+  }
+  #reviews .review_item .text .comment {
+    height: auto;
   }
   #reviews .review_item:nth-child(2n) .video {
     width: 48%;
@@ -4183,10 +4194,9 @@ footer #copy {
     width: 80%;
   }
   #contacts .contacts_info .button_block {
-    margin-left: 20px;
-    padding-left: 47px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
   }
   #contacts .contacts_info .button_block .button {
     font-size: 14px;

@@ -92,6 +92,7 @@
     }
     input[type="submit"], input[type="reset"] {
 	    margin-right: 0;
+	    margin-left: 0;
 	    width: 315px;
 	    height: 58px;
 	    font-size: 18px;
@@ -151,7 +152,7 @@
 	}
     }
     .form { 
-	input, textarea, select {
+	input[type="text"], textarea, select {
 	    margin: 0 10px 30px;
 	    width: 337px;
 	    height: 42px;
@@ -164,6 +165,7 @@
 	    min-height: 42px;
 	    max-height: 42px;
 	}
+	
     }
 }
 
@@ -191,7 +193,7 @@
     }
     .main_section.form { 
 	
-	input, textarea, select {
+	input[type="text"], textarea, select {
 	    margin: 0 10px 30px;
 	    width: 287px;
 	    height: 40px;
@@ -206,9 +208,7 @@
 	}
 	
 	input[type="submit"], input[type="reset"] {
-	    margin-right: 0;
 	    width: 265px;
-	    height: 58px;
 	    font-size: 18px;
 	    font-weight: 400;
 	}
@@ -242,7 +242,7 @@
 	    padding-top: 0px;
 	}
 	
-	input, textarea, select {
+	input[type="text"], textarea, select {
 	    margin: 0 10px 20px;
 	    width: 220px;
 	    font-size: 16px;
@@ -259,6 +259,10 @@
 	    height: 50px;
 	    font-size: 16px;
 	    font-weight: 400;
+	}
+	
+	input[type="submit"]:active, input[type="reset"]:active {
+	    height: 48px;
 	}
     }
 }
@@ -283,7 +287,7 @@
 	
     }
     .form { 
-	input, textarea, select {
+	input[type="text"], textarea, select {
 	    width: 220px;
 	    font-size: 15px;
 	}
