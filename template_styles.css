@@ -4477,7 +4477,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #advantages .adv_tree_left_items .adv_tree_item.hidden, #advantages .adv_tree_right_items .adv_tree_item.hidden {
@@ -4500,7 +4499,6 @@ footer #copy {
   #advantages .adv_tree_left_items .adv_tree_item.animated {
     -webkit-animation-name: bounceInRight;
     animation-name: bounceInRight;
-    opacity: 1;
   }
 }
 @media screen and (min-width: 800px) {
@@ -4515,7 +4513,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #equipment .text.animated {
@@ -4527,7 +4524,6 @@ footer #copy {
     animation-delay: .25s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #equipment .equ_main_block.animated {
@@ -4539,7 +4535,6 @@ footer #copy {
     animation-delay: .50s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #equipment #qualities.hidden .quality {
@@ -4553,7 +4548,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #equipment #qualities.animated .quality:nth-of-type(1) {
@@ -4593,7 +4587,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #catalog.hidden .tab_buttons {
@@ -4609,7 +4602,6 @@ footer #copy {
     animation-delay: .25s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #catalog.hidden .tab .product_item {
@@ -4623,7 +4615,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #catalog.animated .tab .product_item:nth-child(1) {
@@ -4668,7 +4659,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #action.hidden .action_item {
@@ -4684,7 +4674,6 @@ footer #copy {
     animation-duration: 1.3s;
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
-    opacity: 1;
   }
 
   #action.animated .action_item:nth-child(2) {
@@ -4696,7 +4685,6 @@ footer #copy {
     animation-duration: 1.3s;
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
-    opacity: 1;
   }
 }
 @media screen and (min-width: 800px) {
@@ -4711,7 +4699,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #working.hidden .tab_buttons {
@@ -4727,7 +4714,6 @@ footer #copy {
     animation-delay: .25s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #working.hidden .tab .working_item {
@@ -4741,7 +4727,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #working.animated .tab .working_item:nth-child(1) {
@@ -4776,7 +4761,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #turnkey_work.hidden .turnkey_work_stages li {
@@ -4788,7 +4772,6 @@ footer #copy {
     animation-fill-mode: forwards;
     -webkit-animation-duration: .3s;
     animation-duration: .3s;
-    opacity: 1;
   }
 
   #turnkey_work.animated .turnkey_work_stages li:nth-child(1) {
@@ -4859,7 +4842,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #standards.hidden .tab_buttons {
@@ -4875,7 +4857,6 @@ footer #copy {
     animation-delay: .25s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #standards.hidden .video {
@@ -4891,7 +4872,6 @@ footer #copy {
     animation-delay: .25s;
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
-    opacity: 1;
   }
 
   #standards.hidden .tab .standards_item {
@@ -4905,7 +4885,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #standards.animated .tab .standards_item:nth-child(1) {
@@ -4942,7 +4921,6 @@ footer #copy {
     animation-delay: .25s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInRight;
-    opacity: 1;
   }
 
   #sertificates.hidden .sertificates_slider div img {
@@ -4956,7 +4934,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
-    opacity: 1;
   }
 
   #sertificates.animated .sertificates_slider div:nth-child(1) img {
@@ -5011,7 +4988,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #about .about_item.hidden {
@@ -5025,7 +5001,6 @@ footer #copy {
     animation-duration: .3s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #about .about_item.animated:nth-child(1) {
@@ -5060,7 +5035,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #other_jobs.hidden .slide {
@@ -5074,7 +5048,6 @@ footer #copy {
     animation-delay: 0.8s;
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
-    opacity: 1;
   }
 
   #other_jobs.animated .slide:nth-child(1) {
@@ -5119,7 +5092,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #reviews .reviews_slider {
@@ -5135,7 +5107,6 @@ footer #copy {
     animation-duration: .2s;
     -webkit-animation-name: fadeInup;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -5150,7 +5121,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #reviews.hidden .review_item {
@@ -5158,12 +5128,10 @@ footer #copy {
   }
 
   #reviews.animated .review_item {
-    opacity: 1;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    opacity: 1;
   }
 
   #reviews.animated .review_item:nth-child(1) {
@@ -5220,7 +5188,6 @@ footer #copy {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    opacity: 1;
   }
 
   #contacts.hidden .map {
@@ -5236,7 +5203,6 @@ footer #copy {
     animation-delay: .75s;
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
-    opacity: 1;
   }
 
   #contacts.hidden .contacts_info {
@@ -5252,7 +5218,6 @@ footer #copy {
     animation-name: zoomIn;
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
-    opacity: 1;
   }
 }
 /* and animate styles */
