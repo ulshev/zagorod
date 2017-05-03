@@ -1025,12 +1025,12 @@ footer #copy {
     padding-top: 30px;
   }
 }
-/* for IE9 */
-@media screen and (min-width: 0\0) {
-  #main_slider .slider .slide {
-    top: 10%;
-  }
-}
+/* for IE9 
+@media screen and (min-width:0\0) { 
+    #main_slider .slider .slide {
+	top: 10%;
+    }
+} */
 /* end main slider styles */
 /* start advantages tree styles */
 #advantages {
