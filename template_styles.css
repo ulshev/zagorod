@@ -810,6 +810,7 @@ footer #copy {
   top: 47.5%;
   font-size: 21px;
   color: #fff;
+  *top: 10%;
   -webkit-animation: slide-text 0.6s 0.5s both;
   -moz-animation: slide-text 0.6s 0.5s both;
   animation: slide-text 0.6s 0.5s both;
