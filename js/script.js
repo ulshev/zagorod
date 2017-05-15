@@ -155,7 +155,7 @@ $(document).ready(function() {
 		      breakpoint: 590,
 		      settings: { 
 			slidesToShow: 1,
-			adaptiveHeight: true
+			adaptiveHeight: false
 		      }
 		    }]
 		  });
