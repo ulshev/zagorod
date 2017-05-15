@@ -401,3 +401,15 @@
 
 
 /* end popups styles */
+
+
+.fancybox-slide .fancybox_video {
+    width: 80%;
+    max-height: 90%;
+    padding: 20px;
+    
+    video {
+        max-width: 100%;
+        max-height: 100%
+    }
+}

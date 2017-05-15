@@ -85,6 +85,10 @@ background: linear-gradient(to top, rgba(0,0,0, 0.58), transparent);
                 }
             }
             
+            .fancybox_video {
+                display: none;
+            }
+            
             video {
                 background-color: transparent;
                 pointer-events: none;

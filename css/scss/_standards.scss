@@ -208,13 +208,16 @@
 	.tab {
 	    text-align: right;
 	}
-	
+	.tab.active {
+	    padding: 1px;
+	}
 	.video {
 	    font-size: 15px;
 	    width: auto;
 	    max-width: 47%;
-	    display: inline-block;
-	    margin-top: 25px;
+	    display: block;
+	    margin: 25px auto;
+	    float: none;
 	    
 	    .play {
 		background-size: 28%;
@@ -241,9 +244,9 @@
 	    }
 	}
 	
-	.video + .standards_item {
-	    margin-top: 25px;
-	}
+	//.video + .standards_item {
+	  //  margin-top: 25px;
+	//}
 	
     }
 }

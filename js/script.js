@@ -7,7 +7,7 @@ $(document).ready(function() {
 		    $("#main_menu a,a[rel='m_PageScroll2id']").mPageScroll2id({
 			highlightSelector:"#main_menu a"
 		    });
-		    $("a[rel='m_PageScroll2id']").mPageScroll2id({scrollSpeed: 900});
+		    $("a.m_PageScroll2id").mPageScroll2id({scrollSpeed: 900});
 		});
 	})(jQuery);
 	
@@ -269,7 +269,7 @@ $(document).ready(function() {
 					interval: 100,
 				},
 				
-				"#equipment .h1": {
+				/*"#equipment .h1": {
 					position: 0,
 					loaded: false,
 					interval: 100,
@@ -283,17 +283,17 @@ $(document).ready(function() {
 					position: 0,
 					loaded: false,
 					interval: 100,
-				},
+				},*/
 				"#equipment #qualities": {
 					position: 0,
 					loaded: false,
 					interval: 100,
 				},
-				"#catalog": {
+				/*"#catalog": {
 					position: 0,
 					loaded: false,
 					interval: 300,
-				},
+				},*/
 				"#action": {
 					position: 0,
 					loaded: false,
@@ -309,17 +309,17 @@ $(document).ready(function() {
 					loaded: false,
 					interval: 400,
 				},
-				"#standards": {
+				/*"#standards": {
 					position: 0,
 					loaded: false,
 					interval: 400,
-				},
+				},*/
 				"#sertificates": {
 					position: 0,
 					loaded: false,
 					interval: 200,
 				},
-				"#about .h1": {
+				/*"#about .h1": {
 					position: 0,
 					loaded: false,
 					interval: 100,
@@ -343,7 +343,7 @@ $(document).ready(function() {
 					position: 0,
 					loaded: false,
 					interval: 100,
-				},
+				},*/
 				"#other_jobs": {
 					position: 0,
 					loaded: false,
@@ -354,11 +354,11 @@ $(document).ready(function() {
 					loaded: false,
 					interval: 400,
 				},
-				"#contacts": {
+				/*"#contacts": {
 					position: 0,
 					loaded: false,
 					interval: 300,
-				},
+				},*/
 			};
 			
 			$.each(loadingElements, function(id, nextElement){
@@ -395,5 +395,40 @@ $(document).ready(function() {
 			theme:"minimal-dark"
 		});
         });
+	
+	$(window).resize(function(){
+	        var width = $(window).width();
+		if (width < 1000) {
+			$('.main_menu').css("display", "none");
+		}else{
+			$('.main_menu').attr('style', '');
+		}
+	});
+	
+	$('.menu_button_mob').click(function(){
+		if ($('.main_menu').css("display") == "block") {
+		   $('.main_menu').slideUp(500);
+		}else{
+		   $('.main_menu').slideDown(500);
+		}
+	});
+	
+	
+	$(".preview").fancybox({
+	     afterShow: function() {
+		// After the show-slide-animation has ended - play the vide in the current slide
+		this.content.find('video').trigger('play')
+		// Attach the ended callback to trigger the fancybox.next() once the video has ended.
+		this.content.find('video').on('ended', function() {
+		  $.fancybox.next();
+		});
+	     },
+             
+             openEffect : 'none',
+             closeEffect: 'none',
+             closeBtn   : 'true',
+             scrolling  : 'no',
+        });
+    
 });
 

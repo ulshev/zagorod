@@ -40,25 +40,25 @@
 		<nav>
 			<ul class="main_menu">
 				<li>
-					<a class="active" rel="m_PageScroll2id" href="#main_slider" title="Главная страница">Главная</a>
+					<a class="m_PageScroll2id" href="#main_slider" title="Главная страница">Главная</a>
 				</li>                  
 				<li>
-					<a rel="m_PageScroll2id" href="#advantages" title="Преимущества">Преимущества</a>
+					<a class="m_PageScroll2id" href="#advantages" title="Преимущества">Преимущества</a>
 				</li>            
 				<li>
-					<a rel="m_PageScroll2id" href="#equipment" title="Наше оборудование">Наше оборудование</a>
+					<a class="m_PageScroll2id" href="#equipment" title="Наше оборудование">Наше оборудование</a>
 				</li>
 				<li>
-					<a rel="m_PageScroll2id" href="#catalog" title="Каталог">Каталог</a>
+					<a class="m_PageScroll2id" href="#catalog" title="Каталог">Каталог</a>
 				</li>
 				<li>
-					<a rel="m_PageScroll2id" href="#about" title="О нас">О нас</a>
+					<a class="m_PageScroll2id" href="#about" title="О нас">О нас</a>
 				</li>
 				<li>
-					<a rel="m_PageScroll2id" href="#contacts" title="Контакты">Контакты</a>
+					<a class="m_PageScroll2id" href="#contacts" title="Контакты">Контакты</a>
 				</li>
 			</ul>
-			<span class="menu_batton_mob"></span>
+			<span class="menu_button_mob"></span>
 		</nav>
 	    </div>
 	</header>
@@ -269,7 +269,7 @@
 			</div>
 			
 			
-			<div class="equ_main_block ver2">
+			<div class="equ_main_block ver2" style="display: none;">
 				<div class="h1">5 фактов о юнилос астра</div>
 				<div class="right">
 					<ul>
@@ -1367,13 +1367,14 @@
 				
 				<div class="tab slider-container active">
 					<div class="video">
-						<img src="images/standards_vieo.jpg" alt="" >
-						<span class="play">смотреть видео</span>
-						
-						<video class="bg_video" loop="loop" preload="auto" muted="">
-							<source src="video/vodeo_bg_main.mp4" type="video/mp4">
-							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
-						</video>
+						<a class="preview" href="#id_video4"><img src="images/standards_vieo.jpg" alt="">
+						<span class="play">смотреть видео</span></a>
+						<div id="id_video4" class="fancybox_video">
+							<video controls class="bg_video" loop="loop" preload="auto" muted="">
+								<source src="video/vodeo_bg_main.mp4" type="video/mp4">
+								<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+							</video>
+						</div>
 					</div>
 					<div class="standards_item">
 						<div class="icon"><img src="images/icon_standards1.png" alt="" ></div>
@@ -1407,12 +1408,14 @@
 				</div>
 				<div class="tab slider-container">
 					<div class="video">
-						<img src="images/standards_vieo2.jpg" alt="" >
-						<span class="play">смотреть видео</span>
-						<video class="bg_video" loop="loop"  preload="auto" muted="">
-							<source src="video/vodeo_bg_main.mp4" type="video/mp4">
-							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
-						</video>
+						<a class="preview" href="#id_video4"><img src="images/standards_vieo.jpg" alt="">
+						<span class="play">смотреть видео</span></a>
+						<div id="id_video4" class="fancybox_video">
+							<video controls class="bg_video" loop="loop" preload="auto" muted="">
+								<source src="video/vodeo_bg_main.mp4" type="video/mp4">
+								<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+							</video>
+						</div>
 					</div>
 					<div class="standards_item">
 						<div class="icon"><img src="images/icon_standards1.png" alt="" ></div>
@@ -1446,12 +1449,14 @@
 				</div>
 				<div class="tab slider-container">
 					<div class="video">
-						<img src="images/standards_vieo3.jpg" alt="" >
-						<span class="play">смотреть видео</span>
-						<video class="bg_video" loop="loop" preload="auto" muted="">
-							<source src="video/vodeo_bg_main.mp4" type="video/mp4">
-							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
-						</video>
+						<a class="preview" href="#id_video4"><img src="images/standards_vieo.jpg" alt="">
+						<span class="play">смотреть видео</span></a>
+						<div id="id_video4" class="fancybox_video">
+							<video controls class="bg_video" loop="loop" preload="auto" muted="">
+								<source src="video/vodeo_bg_main.mp4" type="video/mp4">
+								<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+							</video>
+						</div>
 					</div>
 					<div class="standards_item">
 						<div class="icon"><img src="images/icon_standards1.png" alt="" ></div>
@@ -1660,12 +1665,14 @@
 			<div class="reviews_slider">
 				<div class="review_item">
 				   <div class="video">
-					<img src="images/video1.jpg" alt="">
-					<span class="play">смотреть видео</span>
-					<video class="bg_video" loop="loop" preload="auto" muted="">
-						<source src="video/vodeo_bg_main.mp4" type="video/mp4">
-						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
-					</video>
+					<a class="preview" href="#id_video1"><img src="images/video1.jpg" alt="">
+					<span class="play">смотреть видео</span></a>
+					<div id="id_video1" class="fancybox_video">
+						<video controls class="bg_video" loop="loop" preload="auto" muted="">
+							<source src="video/vodeo_bg_main.mp4" type="video/mp4">
+							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+						</video>
+					</div>
 				   </div>
 				   <div class="text">
 					<div class="avatar"><img src="images/ava1.jpg" alt=""></div>          
@@ -1687,14 +1694,16 @@
 				   </div>
 				</div>
 				<div class="review_item">
-				   <!--div class="video">
-					<img src="images/video2.jpg" alt="">
-					<span class="play">смотреть видео</span>
-					<video class="bg_video" loop="loop" preload="auto" muted="">
-						<source src="video/vodeo_bg_main.mp4" type="video/mp4">
-						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
-					</video>
-				   </div-->
+				   <div class="video">
+					<a class="preview" href="#id_video2"><img src="images/video2.jpg" alt="">
+					<span class="play">смотреть видео</span></a>
+					<div id="id_video2" class="fancybox_video">
+						<video controls class="bg_video" loop="loop" preload="auto" muted="">
+							<source src="video/vodeo_bg_main.mp4" type="video/mp4">
+							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+						</video>
+					</div>
+				   </div>
 				   
 				   <div class="text">
 					<div class="avatar"><img src="images/ava2.jpg" alt=""></div>          
@@ -1717,14 +1726,16 @@
 				   </div>
 				</div>
 				<div class="review_item">
-				   <!--div class="video">
-					<img src="images/video1.jpg" alt="">
-					<span class="play">смотреть видео</span>
-					<video class="bg_video" loop="loop" preload="auto" muted="">
-						<source src="video/vodeo_bg_main.mp4" type="video/mp4">
-						<p>Ваш браузер не поддерживает воспроизведение видео.</p>
-					</video>
-				   </div-->
+				   <div class="video">
+					<a class="preview" href="#id_video3"><img src="images/video1.jpg" alt="">
+					<span class="play">смотреть видео</span></a>
+					<div id="id_video3" class="fancybox_video">
+						<video controls class="bg_video" loop="loop" preload="auto" muted="">
+							<source src="video/vodeo_bg_main.mp4" type="video/mp4">
+							<p>Ваш браузер не поддерживает воспроизведение видео.</p>
+						</video>
+					</div>
+				   </div>
 				   <div class="text">
 					<div class="avatar"><img src="images/ava1.jpg" alt=""></div>          
 					<div class="info">

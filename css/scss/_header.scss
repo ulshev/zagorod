@@ -202,6 +202,7 @@
 	    margin-left: 25px;
 	    padding: 10px 14px 4px;
 	    margin-top: 10px;
+	    margin-right: 65px;
 	    
 	    &:active {
 		margin-top: 11px;
@@ -215,8 +216,94 @@
 	    margin-top: 19px;
 	}
 	
+	
 	nav {
-	    display: none;
+            right: 13px;
+	    top: 63px;
+	    width: 50px;
+	    height: 50px;
+	    position: absolute;
+	    margin: 0;
+	    
+	    .menu_button_mob {
+		height: 30px;
+		border-bottom: 10px solid $color_a;
+		border-top: 10px solid $color_a;
+		border-radius: 3px;
+		display: block;
+		width: 50px;
+		position: absolute;
+		top: -50px;
+		left: 0;
+		cursor: pointer;
+		
+		&:after {
+		    content: '';
+		    position: absolute;
+		    height: 10px;
+		    width: 100%;
+		    top: 10px;
+		    left: 0;
+		    background-color: $color_a;
+		}
+	    }
+	    ul.main_menu {
+		position: absolute;
+		width: 250px;
+		right: 0;
+		margin-top: 10px;
+		padding: 15px 0px;
+		background-color: rgba(0, 0, 0, 0.6);
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		display: none;
+		max-height: 400px;
+		overflow: auto;
+		
+		li {
+		    margin-right: 0;
+		    display: block;
+		    //text-align: right;
+		    font-size: 15px;
+		    height: auto;
+		    padding: 0;
+		    
+		    a {
+			display: inline-block;
+			padding: 15px;
+		    }
+		}
+	    }
+	}
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+	#logo {
+	    margin-right: 5px;
+	    width: 144px;
+	}
+	a.button {
+	    margin-right: 45px;
+	    margin-left: 13px;
+	}
+	nav {
+	    top: 60px;
+	    width: 40px;
+	    height: 40px;
+	    
+	    .menu_button_mob {
+		height: 24px;
+		border-bottom: 8px solid $color_a;
+		border-top: 8px solid $color_a;
+		width: 40px;
+		top: -40px;
+		
+		&:after {
+		    height: 8px;
+		    top: 8px;
+		}
+	    }
 	}
     }
 }
@@ -225,6 +312,10 @@
     #header {
 	a.button {
 	    display: none;
+	}
+	
+	#headr_cont  {
+	    margin-right: 65px;
 	}
     }
 }
@@ -241,6 +332,26 @@
 	    line-height: 145%;
 	    margin-top: 16px;
 	    background-size: auto 100%;
+	    margin-right: 35px;
+	}
+	
+	nav {
+	    top: 50px;
+	    width: 30px;
+	    height: 30px;
+	    
+	    .menu_button_mob {
+		height: 18px;
+		border-bottom: 6px solid $color_a;
+		border-top: 6px solid $color_a;
+		width: 30px;
+		top: -30px;
+		
+		&:after {
+		    height: 6px;
+		    top: 6px;
+		}
+	    }
 	}
     }
 }

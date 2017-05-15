@@ -180,6 +180,7 @@
 	border-top: 1px solid #ededed;
 	overflow: hidden;
 	margin-top: 40px;
+	clear: both;
 	
 	&:after {
 	    @include clear();
@@ -472,10 +473,14 @@
 }
 @media screen and (max-width: 999px) {
     #equipment {
-	.equ_main_block {
-	    //.left, .right, .center {
+	.equ_main_block.ver1 {
+	    .left, .right {
+		width: 45%;
+		margin-bottom: 30px;
+	    }
+	    .center {
 		display: none;
-	    //}
+	    }
 	}
 	.equ_main_block.ver2 {
 	    padding-bottom: 20px;
@@ -508,6 +513,14 @@
 
 @media screen and (max-width: 800px) {
     #equipment {
+	
+	.equ_main_block.ver1 .h4 {
+	    min-height: 45px;
+	    padding-bottom: 10px;
+	    font-size: 18px;
+	    line-height: 130%;
+	}
+	
 	.equ_main_block.ver2 {
 	    .center {
 		img {
@@ -539,6 +552,29 @@
 
 @media screen and (max-width: 590px) {
     #equipment {
+	.equ_main_block.ver1 {
+	    padding-bottom: 0px;
+	    .left, .right {
+		width: auto;
+		float: none;
+		margin-bottom: 20px;
+		text-align: left;
+		
+		.h4 {
+		    min-height: inherit;
+		}
+		
+		li {
+		    padding-left: 25px;
+		    background-position: left 2px;
+		    padding-right: 0;
+		}
+	    }
+	    .right {
+		border-top: 1px solid #ededed;
+	    }
+	}
+	
 	.equ_main_block.ver2 {
 	    ul {
 		li {
