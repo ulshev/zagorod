@@ -572,7 +572,7 @@ a.button:active {
     text-align: center;
   }
   #header nav ul.main_menu li {
-    margin-right: 1.71359%;
+    margin-right: 0;
   }
   #header nav ul.main_menu a {
     padding: 15px 10px 15px;
@@ -607,7 +607,7 @@ a.button:active {
     margin-right: 0;
   }
   #header nav ul.main_menu a {
-    padding: 15px 10px 15px;
+    padding: 15px 6px 15px;
   }
 }
 @media screen and (max-width: 999px) {
@@ -3070,7 +3070,7 @@ footer #copy {
     width: 100%;
     margin-right: 0;
     padding: 20px 20px 10px;
-    height: 190px;
+    height: 230px;
   }
 }
 @media screen and (max-width: 590px) {
