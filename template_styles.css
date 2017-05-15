@@ -514,7 +514,7 @@ a.button:active {
   font-weight: 300;
 }
 #header nav ul.main_menu li {
-  margin-right: 2.26438%;
+  margin-right: 2.14198%;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
@@ -572,7 +572,7 @@ a.button:active {
     text-align: center;
   }
   #header nav ul.main_menu li {
-    margin-right: 1.83599%;
+    margin-right: 1.71359%;
   }
   #header nav ul.main_menu a {
     padding: 15px 10px 15px;
@@ -5692,7 +5692,6 @@ footer #copy {
 /* end popups styles */
 .fancybox-slide .fancybox_video {
   width: 80%;
-  max-height: 90%;
   padding: 20px;
 }
 .fancybox-slide .fancybox_video video {
