@@ -131,13 +131,7 @@ $(document).ready(function() {
 		    prevArrow: '<span class="slick-prev"></span>',
 		    nextArrow: '<span class="slick-next"></span>',
 		    slidesToShow: 1,
-		    responsive: [{
-		      breakpoint: 590,
-		      settings: { 
-			slidesToShow: 1,
-			adaptiveHeight: true
-		      }
-		    }]
+		    adaptiveHeight: true,
 		  });
 		}
 		
@@ -408,8 +402,10 @@ $(document).ready(function() {
 	$('.menu_button_mob').click(function(){
 		if ($('.main_menu').css("display") == "block") {
 		   $('.main_menu').slideUp(500);
+		   $(this).removeClass('active');
 		}else{
 		   $('.main_menu').slideDown(500);
+		   $(this).addClass('active');
 		}
 	});
 	

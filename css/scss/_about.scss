@@ -29,6 +29,10 @@
             line-height: 145%;
             color: $color_a;
         }
+        
+        .h3 + p {
+            min-height: 75px;
+        }
         .photo {
             overflow: hidden;
             position: relative;
@@ -67,6 +71,9 @@
                 font-size: 25px;
                 line-height: 145%;
             }
+            .h3 + p {
+                min-height: 70px;
+            }
             .rezult {
                 font-size: 15px;
                 line-height: 135%;
@@ -74,6 +81,12 @@
                 .h5 {
                     font-size: 15px;
                 }
+            }
+        }
+        
+        .about_item + .about_item + .about_item {
+            .h3 + p {
+                min-height: 90px;
             }
         }
     }
@@ -90,7 +103,9 @@
                 font-size: 23px;
                 line-height: 145%;
             }
-            
+            .h3 + p {
+                min-height: 90px;
+            }
             .rezult {
                 font-size: 14px;
                 line-height: 135%;
@@ -128,10 +143,27 @@
                 }
             }
         }
+        .about_item + .about_item + .about_item {
+            .h3 + p {
+                min-height: 105px;
+            }
+        }
     }
 }
-//@media screen and (max-width: 800px) {
-//}
+@media screen and (max-width: 800px) {
+    #about {
+        .about_item {
+            .h3 + p {
+                min-height: 105px;
+            }
+        }
+        .about_item + .about_item + .about_item {
+            .h3 + p {
+                min-height: 145px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 590px) {
     #about {
@@ -153,7 +185,9 @@
                 font-size: 21px;
                 line-height: 145%;
             }
-            
+            .h3 + p {
+                min-height: inherit;
+            }
             .rezult {
                 font-size: 14px;
                 line-height: 135%;
@@ -163,6 +197,11 @@
                 .h5 {
                     font-size: 14px;
                 }
+            }
+        }
+        .about_item + .about_item + .about_item {
+            .h3 + p {
+                min-height: inherit;
             }
         }
         .about_item:nth-child(2n) {

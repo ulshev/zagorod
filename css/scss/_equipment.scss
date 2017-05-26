@@ -64,6 +64,11 @@
 	.left, .right {
 	    width: 470/1560*100%;
 	    padding-top: 50px;
+	    
+	    .mob_img {
+		width: 65%;
+		display: none;
+	    }
 	}
 	
 	.left {
@@ -415,6 +420,10 @@
 	    }
 	    .left, .right {
 		padding-top: 20px;
+		
+		.mob_img {
+		    display: inline;
+		}
 	    }
 	    .left {
 		li {
@@ -477,6 +486,11 @@
 	    .left, .right {
 		width: 45%;
 		margin-bottom: 30px;
+		
+		.mob_img {
+		    display: inline;
+		    max-width: 250px;
+		}
 	    }
 	    .center {
 		display: none;
@@ -514,11 +528,19 @@
 @media screen and (max-width: 800px) {
     #equipment {
 	
-	.equ_main_block.ver1 .h4 {
-	    min-height: 45px;
-	    padding-bottom: 10px;
-	    font-size: 18px;
-	    line-height: 130%;
+	.equ_main_block.ver1 {
+	    
+	    .left, .right {
+		.mob_img {
+		    width: 80%;
+		}
+	    }
+	    .h4 {
+		min-height: 45px;
+		padding-bottom: 10px;
+		font-size: 18px;
+		line-height: 130%;
+	    }
 	}
 	
 	.equ_main_block.ver2 {
@@ -559,6 +581,10 @@
 		float: none;
 		margin-bottom: 20px;
 		text-align: left;
+		
+		.mob_img {
+		    zwidth: 40%;
+		}
 		
 		.h4 {
 		    min-height: inherit;
