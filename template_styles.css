@@ -1840,9 +1840,6 @@ footer #copy {
   #equipment .equ_main_block .left, #equipment .equ_main_block .right {
     padding-top: 20px;
   }
-  #equipment .equ_main_block .left .mob_img, #equipment .equ_main_block .right .mob_img {
-    display: inline;
-  }
   #equipment .equ_main_block .left li {
     background-position: right 2px;
     padding-right: 25px;
